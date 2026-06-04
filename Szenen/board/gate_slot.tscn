@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bx6ldv0hjipku"]
+
+[node name="GateSlot" type="Panel" unique_id=499300320]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1092.0
+offset_bottom = -588.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1607725761]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="INPUT" type="TextureRect" parent="CenterContainer" unique_id=951216441]
+layout_mode = 2

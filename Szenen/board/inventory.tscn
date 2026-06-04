@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://mhumf5aamuul"]
+
+[ext_resource type="PackedScene" uid="uid://c6nqsdlbor3o5" path="res://Szenen/gates/logic_gate.tscn" id="1_dyo5l"]
+[ext_resource type="PackedScene" uid="uid://blqib6jfc1mef" path="res://Szenen/gates/And_gate.tscn" id="1_he2l3"]
+[ext_resource type="PackedScene" uid="uid://dml47l5bpbw82" path="res://Szenen/gates/Or_gate.tscn" id="1_m0cvd"]
+
+[node name="BottomInventory" type="Panel" unique_id=841785449]
+offset_right = 1152.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1141523334]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+localize_numeral_system = false
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="OrGate" parent="HBoxContainer" unique_id=1576063522 instance=ExtResource("1_m0cvd")]
+layout_mode = 2
+
+[node name="AndGate" parent="HBoxContainer" unique_id=463657360 instance=ExtResource("1_he2l3")]
+layout_mode = 2
+
+[node name="LogicGate" parent="HBoxContainer" unique_id=997521103 instance=ExtResource("1_dyo5l")]
+layout_mode = 2

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c6nqsdlbor3o5"]
+
+[ext_resource type="Script" uid="uid://bjyvnk2aw5f2u" path="res://Skripte/logic_gate.gd" id="1_fogk0"]
+[ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_paudg"]
+
+[node name="LogicGate" type="Panel" unique_id=997521103]
+offset_right = 60.0
+offset_bottom = 60.0
+script = ExtResource("1_fogk0")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1879232404]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=1089945737]
+layout_mode = 2
+texture = ExtResource("2_paudg")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=1718775879]
+layout_mode = 2
+text = "Logic"
