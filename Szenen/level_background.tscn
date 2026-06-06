@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://23bn052jev1b"]
+
+[ext_resource type="Texture2D" uid="uid://du2yphfaojgy0" path="res://Assets/Werkstatt.png" id="1_4hpec"]
+[ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="2_iscm3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5t7x"]
+bg_color = Color(0.97398597, 0.39161462, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hpec"]
+bg_color = Color(0.972549, 0.39215687, 0, 1)
+
+[node name="Level Background" type="Control" unique_id=559517426]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=2108073614]
+layout_mode = 0
+offset_right = 2000.0
+offset_bottom = 1049.0
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_4hpec")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=474843543]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 589.0
+offset_right = 586.0
+offset_bottom = 612.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_u5t7x")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4hpec")
+text = "AND"
+script = ExtResource("2_iscm3")
+
+[connection signal="pressed" from="Button" to="Button" method="on_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dkyk1e23f1wm6"]
+
+[ext_resource type="Script" uid="uid://bbstbiq4bc62e" path="res://Skripte/and_gate.gd" id="1_rh2bs"]
+[ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_6y0e3"]
+
+[node name="AndGateButton" type="Panel" unique_id=307010137]
+offset_right = 60.0
+offset_bottom = 60.0
+script = ExtResource("1_rh2bs")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1136519479]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=1293073102]
+layout_mode = 2
+texture = ExtResource("2_6y0e3")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=876805797]
+layout_mode = 2
+text = "AND"

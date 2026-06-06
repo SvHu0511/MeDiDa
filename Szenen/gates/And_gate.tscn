@@ -1,40 +1,8 @@
-[gd_scene format=3 uid="uid://blqib6jfc1mef"]
+[gd_scene format=3 uid="uid://b2uhlfc6c3jed"]
 
-[ext_resource type="Script" uid="uid://bbstbiq4bc62e" path="res://Skripte/and_gate.gd" id="1_e0y5e"]
+[ext_resource type="Texture2D" uid="uid://irvpoladxjg4" path="res://Assets/and-gate.webp" id="1_1xo4q"]
 
-[node name="AndGate" type="Panel" unique_id=997521103 node_paths=PackedStringArray("shortcut_context")]
-offset_right = 60.0
-offset_bottom = 60.0
-shortcut_context = NodePath(".")
-script = ExtResource("1_e0y5e")
+[node name="AndGate" type="Area2D" unique_id=557336751]
 
-[node name="Button" type="Button" parent="." unique_id=805440311]
-modulate = Color(1, 1, 1, 0)
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-action_mode = 0
-
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1879232404]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=1089945737]
-layout_mode = 2
-stretch_mode = 4
-
-[node name="Label" type="Label" parent="CenterContainer" unique_id=1718775879]
-layout_mode = 2
-text = "AND"
-
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Image" type="Sprite2D" parent="." unique_id=1161490137]
+texture = ExtResource("1_1xo4q")

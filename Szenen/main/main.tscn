@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://bmovdkckfw03i" path="res://Szenen/board/puzzle_board.tscn" id="1_5tunt"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="1_vwvuq"]
-[ext_resource type="PackedScene" uid="uid://blqib6jfc1mef" path="res://Szenen/gates/And_gate.tscn" id="3_vwvuq"]
 
 [node name="Main" type="Control" unique_id=1387783340]
 layout_mode = 3
@@ -22,13 +21,6 @@ offset_right = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_vwvuq")
-
-[node name="AndGate" parent="." unique_id=997521103 instance=ExtResource("3_vwvuq")]
-layout_mode = 0
-offset_left = 40.0
-offset_top = 219.0
-offset_right = 100.0
-offset_bottom = 279.0
 
 [node name="PuzzleBoard" parent="." unique_id=1898458110 instance=ExtResource("1_5tunt")]
 layout_mode = 1
