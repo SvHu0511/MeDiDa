@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://mhumf5aamuul"]
 
 [ext_resource type="PackedScene" uid="uid://c6nqsdlbor3o5" path="res://Szenen/gates/logic_gate.tscn" id="1_dyo5l"]
-[ext_resource type="PackedScene" uid="uid://dml47l5bpbw82" path="res://Szenen/gates/Or_gate.tscn" id="1_m0cvd"]
+[ext_resource type="PackedScene" uid="uid://dml47l5bpbw82" path="res://Szenen/gates/Or_gate_button.tscn" id="1_m0cvd"]
 [ext_resource type="PackedScene" uid="uid://dkyk1e23f1wm6" path="res://Szenen/gates/And_gate_button.tscn" id="2_g6366"]
 
 [node name="BottomInventory" type="Panel" unique_id=841785449]
@@ -19,7 +19,7 @@ localize_numeral_system = false
 theme_override_constants/separation = 60
 alignment = 1
 
-[node name="OrGate" parent="HBoxContainer" unique_id=1576063522 instance=ExtResource("1_m0cvd")]
+[node name="OrGateButton" parent="HBoxContainer" unique_id=1576063522 instance=ExtResource("1_m0cvd")]
 layout_mode = 2
 
 [node name="AndGateButton" parent="HBoxContainer" unique_id=307010137 instance=ExtResource("2_g6366")]

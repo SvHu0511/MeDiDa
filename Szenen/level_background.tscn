@@ -2,12 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://du2yphfaojgy0" path="res://Assets/Werkstatt.png" id="1_4hpec"]
 [ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="2_iscm3"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u5t7x"]
-bg_color = Color(0.97398597, 0.39161462, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hpec"]
-bg_color = Color(0.972549, 0.39215687, 0, 1)
+[ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_u5t7x"]
+[ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Szenen/or_button.gd" id="4_u5t7x"]
 
 [node name="Level Background" type="Control" unique_id=559517426]
 layout_mode = 3
@@ -19,21 +15,39 @@ grow_vertical = 2
 
 [node name="Background" type="TextureRect" parent="." unique_id=2108073614]
 layout_mode = 0
-offset_right = 2000.0
-offset_bottom = 1049.0
-scale = Vector2(0.6, 0.6)
+offset_right = 1152.0
+offset_bottom = 648.0
 texture = ExtResource("1_4hpec")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="." unique_id=474843543]
+[node name="PuzzleField" type="TextureRect" parent="." unique_id=1591032726]
 layout_mode = 0
-offset_left = 551.0
-offset_top = 589.0
-offset_right = 586.0
-offset_bottom = 612.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_u5t7x")
-theme_override_styles/hover = SubResource("StyleBoxFlat_4hpec")
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_u5t7x")
+
+[node name="Toolbox" type="Panel" parent="." unique_id=484217240]
+layout_mode = 0
+offset_top = 565.0
+offset_right = 1152.0
+offset_bottom = 605.0
+
+[node name="Buttons" type="HBoxContainer" parent="Toolbox" unique_id=225964308]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="AndButton" type="Button" parent="Toolbox/Buttons" unique_id=474843543]
+layout_mode = 2
 text = "AND"
 script = ExtResource("2_iscm3")
 
-[connection signal="pressed" from="Button" to="Button" method="on_pressed"]
+[node name="OrButton" type="Button" parent="Toolbox/Buttons" unique_id=284398991]
+layout_mode = 2
+text = "OR
+"
+script = ExtResource("4_u5t7x")
+
+[connection signal="pressed" from="Toolbox/Buttons/AndButton" to="Toolbox/Buttons/AndButton" method="on_pressed"]
+[connection signal="pressed" from="Toolbox/Buttons/OrButton" to="Toolbox/Buttons/OrButton" method="on_pressed"]
