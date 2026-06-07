@@ -1,12 +1,27 @@
-[gd_scene format=3 uid="uid://c6nqsdlbor3o5"]
+[gd_scene format=3 uid="uid://pskpf4tb4xbx"]
 
-[ext_resource type="Script" uid="uid://bjyvnk2aw5f2u" path="res://Skripte/logic_gate.gd" id="1_fogk0"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_paudg"]
+
+[sub_resource type="GDScript" id="GDScript_fogk0"]
+script/source = "extends Panel
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+@export var gate_type : String
+
+var dragging = false
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="LogicGate" type="Panel" unique_id=997521103]
 offset_right = 60.0
 offset_bottom = 60.0
-script = ExtResource("1_fogk0")
+script = SubResource("GDScript_fogk0")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1879232404]
 layout_mode = 1

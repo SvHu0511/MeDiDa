@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://dufy3g1s6xknv"]
 
 [ext_resource type="Texture2D" uid="uid://irvpoladxjg4" path="res://Assets/and-gate.webp" id="1_1xo4q"]
+[ext_resource type="Script" uid="uid://dbn0hqmlqngst" path="res://Skripte/and_gate_new.gd" id="1_tlgs0"]
 
 [node name="AndGate" type="Area2D" unique_id=557336751]
+script = ExtResource("1_tlgs0")
 
 [node name="Image" type="Sprite2D" parent="." unique_id=1161490137]
 texture = ExtResource("1_1xo4q")
+
+[node name="Button" type="Button" parent="." unique_id=65453016]
+modulate = Color(1, 1, 1, 0)
+offset_left = -601.0
+offset_top = -231.0
+offset_right = 601.0
+offset_bottom = 232.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

@@ -1,8 +1,24 @@
-[gd_scene format=3 uid="uid://mhumf5aamuul"]
+[gd_scene format=3 uid="uid://0le7kcpyxwjb"]
 
-[ext_resource type="PackedScene" uid="uid://c6nqsdlbor3o5" path="res://Szenen/gates/logic_gate.tscn" id="1_dyo5l"]
-[ext_resource type="PackedScene" uid="uid://dml47l5bpbw82" path="res://Szenen/gates/Or_gate_button.tscn" id="1_m0cvd"]
+[ext_resource type="PackedScene" uid="uid://pskpf4tb4xbx" path="res://Szenen/gates/logic_gate.tscn" id="1_dyo5l"]
+[ext_resource type="PackedScene" uid="uid://ltij02l833kn" path="res://Szenen/gates/Or_gate_button.tscn" id="1_m0cvd"]
 [ext_resource type="PackedScene" uid="uid://dkyk1e23f1wm6" path="res://Szenen/gates/And_gate_button.tscn" id="2_g6366"]
+
+[sub_resource type="GDScript" id="GDScript_g6366"]
+script/source = "extends Panel
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+@export var gate_type = \"OR\"
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="BottomInventory" type="Panel" unique_id=841785449]
 offset_right = 1152.0
@@ -21,6 +37,7 @@ alignment = 1
 
 [node name="OrGateButton" parent="HBoxContainer" unique_id=1576063522 instance=ExtResource("1_m0cvd")]
 layout_mode = 2
+script = SubResource("GDScript_g6366")
 
 [node name="AndGateButton" parent="HBoxContainer" unique_id=307010137 instance=ExtResource("2_g6366")]
 layout_mode = 2

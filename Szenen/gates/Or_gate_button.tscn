@@ -1,12 +1,10 @@
-[gd_scene format=3 uid="uid://dml47l5bpbw82"]
+[gd_scene format=3 uid="uid://ltij02l833kn"]
 
-[ext_resource type="Script" uid="uid://rdn6685qsjfe" path="res://Skripte/or_gate.gd" id="1_c6b0p"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_rrkrr"]
 
 [node name="OrGate" type="Panel" unique_id=997521103]
 offset_right = 60.0
 offset_bottom = 60.0
-script = ExtResource("1_c6b0p")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1879232404]
 layout_mode = 1

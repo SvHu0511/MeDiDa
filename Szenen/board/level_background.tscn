@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://du2yphfaojgy0" path="res://Assets/Werkstatt.png" id="1_4hpec"]
 [ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="2_iscm3"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_u5t7x"]
-[ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Szenen/or_button.gd" id="4_u5t7x"]
+[ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Skripte/or_button.gd" id="4_u5t7x"]
 
 [node name="Level Background" type="Control" unique_id=559517426]
 layout_mode = 3
