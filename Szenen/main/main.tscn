@@ -16,7 +16,10 @@ mouse_filter = 1
 layout_mode = 1
 
 [node name="GateSlot" parent="." unique_id=1456416178 instance=ExtResource("3_0idqk")]
-position = Vector2(579, 270)
+position = Vector2(418, 258)
 
 [node name="GateSlot2" parent="." unique_id=696068131 instance=ExtResource("3_0idqk")]
-position = Vector2(578, 376)
+position = Vector2(420, 389)
+
+[node name="GateSlot3" parent="." unique_id=92493630 instance=ExtResource("3_0idqk")]
+position = Vector2(660, 331)

@@ -1,12 +1,9 @@
 [gd_scene format=3 uid="uid://bx6ldv0hjipku"]
 
-[ext_resource type="Script" uid="uid://dkyldnwolfo5h" path="res://Skripte/gate_slot.gd" id="1_5cvix"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cvix"]
 size = Vector2(100, 50)
 
 [node name="GateSlot" type="Area2D" unique_id=1456416178 groups=["gate_slot"]]
-script = ExtResource("1_5cvix")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1713860137]
 shape = SubResource("RectangleShape2D_5cvix")

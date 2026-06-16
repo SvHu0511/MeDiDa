@@ -1,0 +1,30 @@
+extends Area2D
+#handles drag and drop logic, add script and mouse signals to an Area2D child of a scene
+#connect a node to the "dropped" signal for logic when node is dropped
+
+var dragging: bool
+var draggable: bool
+var drag_offset: Vector2
+
+signal dropped
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+		if not Global.dragging and draggable and event.pressed:
+			Global.dragging = true
+			dragging = true
+			drag_offset = get_parent().position - get_global_mouse_position()
+		elif dragging and not event.pressed:
+			Global.dragging = false
+			dragging = false
+			dropped.emit()
+	
+	if event is InputEventMouseMotion and dragging:
+		get_parent().position = get_global_mouse_position() + drag_offset
+
+
+func _on_mouse_entered() -> void:
+	draggable = true
+
+func _on_mouse_exited() -> void:
+	draggable = false

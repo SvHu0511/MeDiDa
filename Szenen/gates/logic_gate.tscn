@@ -1,15 +1,20 @@
 [gd_scene format=3 uid="uid://pskpf4tb4xbx"]
 
 [ext_resource type="Script" uid="uid://b2lf8p77al0a1" path="res://Skripte/logic_gate.gd" id="1_paudg"]
+[ext_resource type="Script" uid="uid://m4byyq4n0iwa" path="res://Skripte/drag_n_drop.gd" id="2_xjauy"]
+[ext_resource type="PackedScene" uid="uid://cwqk16wo28yli" path="res://Szenen/board/wire.tscn" id="3_ca8lf"]
+[ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="4_ca8lf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fogk0"]
 size = Vector2(100, 50)
 
-[node name="LogicGate" type="Area2D" unique_id=1790688396]
-z_index = 1
+[node name="LogicGate" type="Node2D" unique_id=630047478]
 script = ExtResource("1_paudg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=356635499]
+[node name="Area2D" type="Area2D" parent="." unique_id=638401551]
+script = ExtResource("2_xjauy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=356635499]
 shape = SubResource("RectangleShape2D_fogk0")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1717983696]
@@ -41,7 +46,17 @@ grow_vertical = 2
 layout_mode = 2
 text = "Logic"
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_area_exited"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[node name="Wire" parent="." unique_id=1956494375 instance=ExtResource("3_ca8lf")]
+position = Vector2(50, 0)
+
+[node name="InputSlot" parent="." unique_id=1427703755 instance=ExtResource("4_ca8lf")]
+position = Vector2(-50, -15)
+
+[node name="InputSlot2" parent="." unique_id=1147849732 instance=ExtResource("4_ca8lf")]
+position = Vector2(-50, 15)
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="dropped" from="Area2D" to="." method="_on_area_2d_dropped"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://kdugptw3dxjh"]
+
+[ext_resource type="Script" uid="uid://cmw8pfrjgujse" path="res://Skripte/input_slot.gd" id="1_ukwjh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7bpx5"]
+size = Vector2(14, 14)
+
+[node name="InputSlot" type="Area2D" unique_id=1196777265 groups=["input_slot"]]
+script = ExtResource("1_ukwjh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=355674961]
+shape = SubResource("RectangleShape2D_7bpx5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=533507165]
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 7.0
+offset_bottom = 7.0
+mouse_filter = 1
+color = Color(0.18488362, 0.18488361, 0.18488361, 1)
