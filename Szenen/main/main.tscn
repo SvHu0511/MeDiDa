@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://23bn052jev1b" path="res://Szenen/board/level_background.tscn" id="1_wajws"]
 [ext_resource type="PackedScene" uid="uid://bx6ldv0hjipku" path="res://Szenen/board/gate_slot.tscn" id="3_0idqk"]
 [ext_resource type="Texture2D" uid="uid://d1884aiakmgc5" path="res://Assets/medida-symbol-cheatsheet.png" id="3_1b6ah"]
+[ext_resource type="Texture2D" uid="uid://cb83i1wajko0u" path="res://Assets/medida-symbol-home.png" id="3_j67hw"]
 [ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Szenen/main/button_cheatsheet.gd" id="3_qgka3"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="4_1b6ah"]
 [ext_resource type="Script" uid="uid://cbkjgwwv2m8wk" path="res://Szenen/main/cheatsheet.gd" id="5_j67hw"]
@@ -27,6 +28,16 @@ position = Vector2(420, 389)
 
 [node name="GateSlot3" parent="." unique_id=92493630 instance=ExtResource("3_0idqk")]
 position = Vector2(660, 331)
+
+[node name="ButtonHome" type="TextureButton" parent="." unique_id=1180478061]
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 311.0
+offset_right = 2663.0
+offset_bottom = 2556.0
+scale = Vector2(0.04, 0.04)
+texture_normal = ExtResource("3_j67hw")
+stretch_mode = 0
 
 [node name="ButtonCheatsheet" type="TextureButton" parent="." unique_id=1018834203]
 layout_mode = 0
