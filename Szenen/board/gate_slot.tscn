@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://bx6ldv0hjipku"]
 
+[ext_resource type="Script" uid="uid://bf5af5cs0lf6l" path="res://Skripte/gate_slot.gd" id="1_0s1to"]
+[ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="1_5cvix"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5cvix"]
 size = Vector2(100, 50)
 
 [node name="GateSlot" type="Area2D" unique_id=1456416178 groups=["gate_slot"]]
+script = ExtResource("1_0s1to")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1713860137]
 shape = SubResource("RectangleShape2D_5cvix")
@@ -15,3 +19,9 @@ offset_right = 53.0
 offset_bottom = 28.0
 mouse_filter = 2
 color = Color(1, 1, 1, 0.39215687)
+
+[node name="InputSlot" parent="." unique_id=1196777265 instance=ExtResource("1_5cvix")]
+position = Vector2(-50, -15)
+
+[node name="InputSlot2" parent="." unique_id=1110503284 instance=ExtResource("1_5cvix")]
+position = Vector2(-50, 15)

@@ -1,7 +1,11 @@
 extends Area2D
-var wire_ref: Area2D
-#might not be needed?
+var input: bool
+var occupied: bool
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func connect_wire(wire_input):
+	input = wire_input
+	occupied = true
+
+func disconnect_wire():
+	input = false
+	occupied = false
