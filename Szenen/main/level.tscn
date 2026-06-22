@@ -1,9 +1,11 @@
-[gd_scene format=3 uid="uid://dcj3dno7b2db1"]
+[gd_scene format=3 uid="uid://o8g84ldy5ixl"]
 
 [ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_1huob"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_2h64o"]
 [ext_resource type="Script" uid="uid://dfp3hvl3vvt0i" path="res://Szenen/main/button_level_1.gd" id="3_62tcq"]
-[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/button_levelauswahl.gd" id="3_xir2a"]
+[ext_resource type="Script" uid="uid://bfdc5hwjlixsa" path="res://Skripte/level.gd" id="3_xir2a"]
+[ext_resource type="Texture2D" uid="uid://b6ylw6j0bhe6o" path="res://Assets/Pfeil.png" id="5_dn4ax"]
+[ext_resource type="Script" uid="uid://7x43dbdcwg5b" path="res://Szenen/main/back_home_button.gd" id="6_smde2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62tcq"]
 content_margin_left = 4.0
@@ -97,5 +99,17 @@ text = "LEVEL 2
 script = ExtResource("3_xir2a")
 metadata/_edit_use_anchors_ = true
 
+[node name="backHome" type="TextureButton" parent="." unique_id=1497674136]
+offset_left = 37.999996
+offset_top = 42.999992
+offset_right = 443.0
+offset_bottom = 342.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("5_dn4ax")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("6_smde2")
+
 [connection signal="pressed" from="level1" to="level1" method="_on_pressed"]
 [connection signal="pressed" from="level2" to="level2" method="_on_pressed"]
+[connection signal="pressed" from="backHome" to="level1" method="_on_texture_button_pressed"]

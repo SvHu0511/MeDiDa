@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bci0yuwyahvsx"
-path="res://.godot/imported/Katze.png-cc54a824dc9ced9a5b7124f0ee165255.ctex"
+uid="uid://b6ylw6j0bhe6o"
+path="res://.godot/imported/Pfeil.png-4afa4b1b33b336778330865916ad05e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Katze.png"
-dest_files=["res://.godot/imported/Katze.png-cc54a824dc9ced9a5b7124f0ee165255.ctex"]
+source_file="res://Assets/Pfeil.png"
+dest_files=["res://.godot/imported/Pfeil.png-4afa4b1b33b336778330865916ad05e6.ctex"]
 
 [params]
 
