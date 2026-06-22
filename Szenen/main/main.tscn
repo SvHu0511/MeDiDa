@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://23bn052jev1b" path="res://Szenen/board/level_background.tscn" id="1_wajws"]
 [ext_resource type="PackedScene" uid="uid://bx6ldv0hjipku" path="res://Szenen/board/gate_slot.tscn" id="3_0idqk"]
-[ext_resource type="Texture2D" uid="uid://d1884aiakmgc5" path="res://Assets/medida-symbol-cheatsheet.png" id="3_1b6ah"]
-[ext_resource type="Texture2D" uid="uid://cb83i1wajko0u" path="res://Assets/medida-symbol-home.png" id="3_j67hw"]
 [ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="3_qgka3"]
+[ext_resource type="Texture2D" uid="uid://08btemwbik6" path="res://Assets/Haus.png" id="3_xdj3n"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="4_1b6ah"]
 [ext_resource type="Script" uid="uid://ybqn5ir3wscm" path="res://Skripte/button_home.gd" id="4_xdj3n"]
+[ext_resource type="Texture2D" uid="uid://7vaatxjsguqr" path="res://Assets/Klemmbrett.png" id="5_ifj4h"]
 [ext_resource type="Script" uid="uid://cbkjgwwv2m8wk" path="res://Skripte/cheatsheet.gd" id="5_j67hw"]
 
 [node name="Main" type="Control" unique_id=1387783340]
@@ -32,23 +32,23 @@ position = Vector2(660, 331)
 
 [node name="ButtonHome" type="TextureButton" parent="." unique_id=1180478061]
 layout_mode = 0
-offset_left = 1076.0
-offset_top = 311.0
-offset_right = 2663.0
-offset_bottom = 2556.0
+offset_left = 1056.0
+offset_top = 342.0
+offset_right = 2643.0
+offset_bottom = 2587.0
 scale = Vector2(0.04, 0.04)
-texture_normal = ExtResource("3_j67hw")
-stretch_mode = 0
+texture_normal = ExtResource("3_xdj3n")
+stretch_mode = 4
 script = ExtResource("4_xdj3n")
 
 [node name="ButtonCheatsheet" type="TextureButton" parent="." unique_id=1018834203]
 layout_mode = 0
-offset_left = 1078.0
+offset_left = 1056.0
 offset_top = 230.0
-offset_right = 2209.0
+offset_right = 2187.0
 offset_bottom = 1830.0
 scale = Vector2(0.05, 0.05)
-texture_normal = ExtResource("3_1b6ah")
+texture_normal = ExtResource("5_ifj4h")
 stretch_mode = 0
 script = ExtResource("3_qgka3")
 

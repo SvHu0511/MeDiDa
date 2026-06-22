@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://23bn052jev1b"]
 
-[ext_resource type="Texture2D" uid="uid://du2yphfaojgy0" path="res://Assets/Werkstatt.png" id="1_4hpec"]
+[ext_resource type="Texture2D" uid="uid://duetunxp045n2" path="res://Assets/Hintergrund.png" id="1_nbgpx"]
 [ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="2_iscm3"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_u5t7x"]
 [ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Skripte/or_button.gd" id="4_u5t7x"]
@@ -18,7 +18,7 @@ mouse_filter = 1
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_4hpec")
+texture = ExtResource("1_nbgpx")
 expand_mode = 1
 
 [node name="PuzzleField" type="TextureRect" parent="." unique_id=1591032726]

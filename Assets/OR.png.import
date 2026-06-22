@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmovwdv812vht"
-path="res://.godot/imported/Werkstattgefiltert.png-cb378891a40d6179ef5f56f9564c340a.ctex"
+uid="uid://ngnidbuerj37"
+path="res://.godot/imported/OR.png-2f887dde824f7bc647e383be842d896e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Werkstattgefiltert.png"
-dest_files=["res://.godot/imported/Werkstattgefiltert.png-cb378891a40d6179ef5f56f9564c340a.ctex"]
+source_file="res://Assets/OR.png"
+dest_files=["res://.godot/imported/OR.png-2f887dde824f7bc647e383be842d896e.ctex"]
 
 [params]
 
