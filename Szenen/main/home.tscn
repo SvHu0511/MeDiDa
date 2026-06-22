@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bye2x5layv23n"]
+
+[ext_resource type="Texture2D" uid="uid://bci0yuwyahvsx" path="res://Assets/Katze.png" id="1_xol5m"]
+[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/level.gd" id="2_j8et0"]
+
+[node name="home" type="Node2D" unique_id=187079477]
+
+[node name="level" type="TextureButton" parent="." unique_id=769812052]
+offset_right = 1500.0
+offset_bottom = 1500.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("1_xol5m")
+script = ExtResource("2_j8et0")
+
+[connection signal="pressed" from="level" to="level" method="_on_pressed"]
