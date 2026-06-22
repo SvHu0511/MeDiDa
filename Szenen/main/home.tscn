@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_xol5m"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_g4m28"]
-[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/level.gd" id="2_j8et0"]
+[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/button_levelauswahl.gd" id="2_j8et0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlq2e"]
 content_margin_left = 4.0
@@ -52,28 +52,31 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_xol5m")
 expand_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="level" type="Button" parent="." unique_id=436015060]
 offset_left = 675.0
 offset_top = 399.0
-offset_right = 3565.0005
-offset_bottom = 1328.9998
+offset_right = 4201.0
+offset_bottom = 1329.0
 scale = Vector2(0.1, 0.1)
 theme_override_fonts/font = ExtResource("2_g4m28")
 theme_override_font_sizes/font_size = 500
 theme_override_styles/normal = SubResource("StyleBoxFlat_xlq2e")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_j8et0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_g4m28")
-text = "LEVEL 1"
+text = "LEVEL AUSWAHL"
 script = ExtResource("2_j8et0")
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1504199196]
-offset_left = 280.0
-offset_top = 18.0
-offset_right = 874.0
-offset_bottom = 131.0
+offset_left = 168.0
+offset_top = 16.0
+offset_right = 762.0
+offset_bottom = 129.0
 theme_override_fonts/font = ExtResource("2_g4m28")
 theme_override_font_sizes/font_size = 100
 text = "Logik mit Katzen"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="level" to="level" method="_on_pressed"]

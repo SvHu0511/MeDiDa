@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://dcj3dno7b2db1"]
+
+[ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_1huob"]
+[ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_2h64o"]
+[ext_resource type="Script" uid="uid://dfp3hvl3vvt0i" path="res://Szenen/main/button_level_1.gd" id="3_62tcq"]
+[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/button_levelauswahl.gd" id="3_xir2a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62tcq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85964066, 0.49240714, 0.24421984, 1)
+border_width_left = 80
+border_width_top = 80
+border_width_right = 80
+border_width_bottom = 80
+border_color = Color(0.7583978, 0.4045801, 0.19248879, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn4ax"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smde2"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[node name="level" type="Node2D" unique_id=700515909]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1257262020]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_1huob")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="level1" type="Button" parent="." unique_id=2085664683]
+offset_left = 675.00006
+offset_top = 333.00003
+offset_right = 4201.0
+offset_bottom = 1263.0
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("2_2h64o")
+theme_override_font_sizes/font_size = 500
+theme_override_styles/normal = SubResource("StyleBoxFlat_62tcq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dn4ax")
+theme_override_styles/hover = SubResource("StyleBoxFlat_smde2")
+text = "LEVEL 1
+"
+script = ExtResource("3_62tcq")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=869213037]
+offset_left = 168.0
+offset_top = 16.0
+offset_right = 762.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("2_2h64o")
+theme_override_font_sizes/font_size = 100
+text = "Levelauswahl"
+metadata/_edit_use_anchors_ = true
+
+[node name="level2" type="Button" parent="." unique_id=114566257]
+offset_left = 675.0
+offset_top = 446.0
+offset_right = 4201.0
+offset_bottom = 1376.0
+scale = Vector2(0.1, 0.1)
+theme_override_fonts/font = ExtResource("2_2h64o")
+theme_override_font_sizes/font_size = 500
+theme_override_styles/normal = SubResource("StyleBoxFlat_62tcq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dn4ax")
+theme_override_styles/hover = SubResource("StyleBoxFlat_smde2")
+text = "LEVEL 2
+"
+script = ExtResource("3_xir2a")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="level1" to="level1" method="_on_pressed"]
+[connection signal="pressed" from="level2" to="level2" method="_on_pressed"]
