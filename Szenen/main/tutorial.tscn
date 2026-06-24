@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://df2d2oegiuu1q"]
+
+[ext_resource type="Texture2D" uid="uid://duetunxp045n2" path="res://Assets/Hintergrund.png" id="1_ehuit"]
+[ext_resource type="Texture2D" uid="uid://dwp7w36y2mjs3" path="res://Assets/Tutorial2.png" id="2_5mrt3"]
+[ext_resource type="Texture2D" uid="uid://dnpfk8ahydreu" path="res://Assets/Tutorial1.png" id="3_rwowx"]
+[ext_resource type="Texture2D" uid="uid://dqnd6beexteaw" path="res://Assets/Tutorial3.png" id="4_7vrqn"]
+[ext_resource type="Texture2D" uid="uid://dvopkrwwvrxco" path="res://Assets/Tutorial4.png" id="5_bhfnd"]
+[ext_resource type="Texture2D" uid="uid://dbusjy0cnoqxa" path="res://Assets/Tutorial5.png" id="6_tvjhf"]
+[ext_resource type="Texture2D" uid="uid://stsjjs08ids7" path="res://Assets/Tutorial6.png" id="7_vmw6g"]
+[ext_resource type="Texture2D" uid="uid://c5v43vcyi4oh3" path="res://Assets/Tutorial7.png" id="8_4hjyh"]
+[ext_resource type="Texture2D" uid="uid://ch2amh6kcc3xy" path="res://Assets/Tutorial8.png" id="9_bsk3x"]
+[ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="10_tvjhf"]
+[ext_resource type="Script" uid="uid://bmd7k27r4qsox" path="res://tutorial_weiter_button.gd" id="11_vmw6g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hjyh"]
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+
+[node name="Tutorial" type="Control" unique_id=316033721]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 3180.0
+offset_bottom = 1566.0
+
+[node name="Hintergrund" type="TextureRect" parent="." unique_id=1493008908]
+layout_mode = 0
+offset_right = 3180.0
+offset_bottom = 1566.0
+texture = ExtResource("1_ehuit")
+expand_mode = 1
+
+[node name="Tutorial1" type="TextureRect" parent="." unique_id=1834887720]
+layout_mode = 0
+offset_left = 233.99998
+offset_top = 44.0
+offset_right = 3735.0005
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_rwowx")
+expand_mode = 1
+
+[node name="Tutorial2" type="TextureRect" parent="." unique_id=1979012978]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_5mrt3")
+expand_mode = 1
+
+[node name="Tutorial3" type="TextureRect" parent="." unique_id=248733197]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_7vrqn")
+expand_mode = 1
+
+[node name="Tutorial4" type="TextureRect" parent="." unique_id=45943875]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_bhfnd")
+expand_mode = 1
+
+[node name="Tutorial5" type="TextureRect" parent="." unique_id=781527976]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_tvjhf")
+expand_mode = 1
+
+[node name="Tutorial6" type="TextureRect" parent="." unique_id=372828938]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_vmw6g")
+expand_mode = 1
+
+[node name="Tutorial7" type="TextureRect" parent="." unique_id=429826884]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("8_4hjyh")
+expand_mode = 1
+
+[node name="Tutorial8" type="TextureRect" parent="." unique_id=440632786]
+visible = false
+layout_mode = 0
+offset_left = 234.0
+offset_top = 44.0
+offset_right = 3735.0
+offset_bottom = 1869.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("9_bsk3x")
+expand_mode = 1
+
+[node name="Weiter" type="Button" parent="." unique_id=247722591]
+layout_mode = 0
+offset_left = 2660.0
+offset_top = 130.0
+offset_right = 3060.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("10_tvjhf")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hjyh")
+text = "WEITER"
+script = ExtResource("11_vmw6g")
+
+[connection signal="pressed" from="Weiter" to="Weiter" method="_on_pressed"]
