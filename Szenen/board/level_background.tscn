@@ -16,27 +16,27 @@ mouse_filter = 1
 
 [node name="Background" type="TextureRect" parent="." unique_id=2108073614]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 3180.0
+offset_bottom = 1566.0
 texture = ExtResource("1_nbgpx")
 expand_mode = 1
 
 [node name="PuzzleField" type="TextureRect" parent="." unique_id=1591032726]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 3180.0
+offset_bottom = 1566.0
 texture = ExtResource("2_u5t7x")
 
 [node name="Toolbox" type="Panel" parent="." unique_id=484217240]
 layout_mode = 0
-offset_top = 565.0
-offset_right = 1152.0
-offset_bottom = 605.0
+offset_top = 1377.0
+offset_right = 3180.0
+offset_bottom = 1457.0
 
 [node name="Buttons" type="HBoxContainer" parent="Toolbox" unique_id=225964308]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 40.0
+offset_right = 3180.0
+offset_bottom = 80.0
 alignment = 1
 
 [node name="AndButton" type="Button" parent="Toolbox/Buttons" unique_id=474843543]
