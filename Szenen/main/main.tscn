@@ -113,7 +113,7 @@ position = Vector2(2454, 766.00006)
 
 [node name="Cheatsheet" type="TextureRect" parent="." unique_id=78427446]
 visible = false
-z_index = 1
+z_index = 5
 layout_mode = 0
 offset_left = 631.0
 offset_top = -409.0
