@@ -40,11 +40,15 @@ offset_bottom = 80.0
 alignment = 1
 
 [node name="AndButton" type="Button" parent="Toolbox/Buttons" unique_id=474843543]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 text = "AND"
 script = ExtResource("2_iscm3")
 
 [node name="OrButton" type="Button" parent="Toolbox/Buttons" unique_id=284398991]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 text = "OR
 "
