@@ -13,7 +13,7 @@ func _input(event: InputEvent) -> void:
 	if stop_drag:
 		return
 	
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+	if event is InputEventScreenTouch:
 		if not Global.dragging and draggable and event.pressed:
 			Global.dragging = true
 			dragging = true
@@ -23,7 +23,7 @@ func _input(event: InputEvent) -> void:
 			dragging = false
 			dropped.emit()
 	
-	if event is InputEventMouseMotion and dragging:
+	if event is InputEventScreenDrag and dragging:
 		get_parent().global_position = get_global_mouse_position() + drag_offset
 
 

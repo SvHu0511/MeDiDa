@@ -22,7 +22,7 @@ mouse_filter = 2
 color = Color(1, 1, 1, 0.39215687)
 
 [node name="InputSlot" parent="." unique_id=1196777265 instance=ExtResource("1_5cvix")]
-position = Vector2(-50, -15)
+position = Vector2(-49.199997, -16.599998)
 
 [node name="InputSlot2" parent="." unique_id=1110503284 instance=ExtResource("1_5cvix")]
-position = Vector2(-50, 15)
+position = Vector2(-49.199997, 15)

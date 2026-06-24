@@ -36,14 +36,15 @@ mouse_filter = 1
 color = Color(0, 0, 0, 0.5019608)
 
 [node name="Wire" parent="." unique_id=1956494375 instance=ExtResource("3_ca8lf")]
+position = Vector2(49.199997, 0)
 
 [node name="WireHead" parent="Wire" unique_id=1228259660 instance=ExtResource("4_os3hy")]
 
 [node name="InputSlot" parent="." unique_id=1427703755 instance=ExtResource("4_ca8lf")]
-position = Vector2(-50, -15)
+position = Vector2(-49.199997, -16.599998)
 
 [node name="InputSlot2" parent="." unique_id=1147849732 instance=ExtResource("4_ca8lf")]
-position = Vector2(-50, 15)
+position = Vector2(-48.799995, 15.000001)
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

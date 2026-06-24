@@ -12,6 +12,7 @@ script = ExtResource("1_ukwjh")
 shape = SubResource("RectangleShape2D_7bpx5")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=533507165]
+visible = false
 offset_left = -7.0
 offset_top = -7.0
 offset_right = 7.0

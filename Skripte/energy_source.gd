@@ -17,3 +17,7 @@ func _on_toggled(toggled_on: bool) -> void:
 	for wire in get_children():
 		if wire.has_node("WireHead"):
 			wire.get_node("WireHead").input = output
+
+#TODO
+func check_solution():
+	pass
