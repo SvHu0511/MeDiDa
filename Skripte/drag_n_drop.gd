@@ -5,10 +5,14 @@ extends Area2D
 var dragging: bool
 var draggable: bool
 var drag_offset: Vector2
+var stop_drag = false
 
 signal dropped
 
 func _input(event: InputEvent) -> void:
+	if stop_drag:
+		return
+	
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if not Global.dragging and draggable and event.pressed:
 			Global.dragging = true

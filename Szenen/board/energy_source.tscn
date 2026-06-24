@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b2pvudbkf5qhe"]
+
+[ext_resource type="Script" uid="uid://03e67lgch4ok" path="res://Skripte/energy_source.gd" id="1_18a0n"]
+
+[node name="EnergySource" type="Button" unique_id=1477292166]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+toggle_mode = true
+script = ExtResource("1_18a0n")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=784493096]
+visible = false
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+mouse_filter = 1
+color = Color(1, 1, 0.007843138, 1)
+
+[connection signal="toggled" from="." to="." method="_on_toggled"]

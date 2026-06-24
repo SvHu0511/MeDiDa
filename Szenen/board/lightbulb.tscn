@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bem838awj8sty"]
+
+[ext_resource type="Script" uid="uid://b1ytjemkkhu77" path="res://Skripte/lightbulb.gd" id="1_8gegj"]
+[ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="2_jmn00"]
+
+[node name="Lightbulb" type="Node2D" unique_id=1679660489]
+script = ExtResource("1_8gegj")
+
+[node name="InputSlot" parent="." unique_id=1196777265 instance=ExtResource("2_jmn00")]
+position = Vector2(-20, 0)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1678482863]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+mouse_filter = 1
+color = Color(0.19793725, 0.19793722, 0.19793722, 1)

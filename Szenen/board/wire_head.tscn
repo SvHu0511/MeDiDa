@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://i473uchygket"]
+
+[ext_resource type="Script" uid="uid://sp86h21ml83m" path="res://Skripte/wire_head.gd" id="1_ofjij"]
+[ext_resource type="Script" uid="uid://m4byyq4n0iwa" path="res://Skripte/drag_n_drop.gd" id="1_tkv24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pjg0r"]
+size = Vector2(14, 14)
+
+[node name="WireHead" type="Node2D" unique_id=1228259660]
+z_index = 1
+script = ExtResource("1_ofjij")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1167188437]
+script = ExtResource("1_tkv24")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=5349571]
+shape = SubResource("RectangleShape2D_pjg0r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1810192494]
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 7.0
+offset_bottom = 7.0
+mouse_filter = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="dropped" from="Area2D" to="." method="_on_area_2d_dropped"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]

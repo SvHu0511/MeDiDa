@@ -1,13 +1,12 @@
 [gd_scene format=3 uid="uid://foqfix47uaf"]
 
-[ext_resource type="Script" uid="uid://c6gvwmbkh5ls7" path="res://Skripte/or_gate.gd" id="1_rrkrr"]
 [ext_resource type="Texture2D" uid="uid://vlenenu6s5fw" path="res://Assets/or-gate-symbol.jpg" id="1_tdbbm"]
 [ext_resource type="PackedScene" uid="uid://pskpf4tb4xbx" path="res://Szenen/gates/logic_gate.tscn" id="3_ld2k8"]
 
 [node name="OrGate" type="Node2D" unique_id=1057368650]
-script = ExtResource("1_rrkrr")
 
 [node name="LogicGate" parent="." unique_id=1790688396 instance=ExtResource("3_ld2k8")]
+gate_type = "OR"
 
 [node name="Image" type="Sprite2D" parent="LogicGate" unique_id=1257452868]
 z_index = 1

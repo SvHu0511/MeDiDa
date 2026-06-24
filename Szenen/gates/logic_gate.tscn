@@ -4,12 +4,15 @@
 [ext_resource type="Script" uid="uid://m4byyq4n0iwa" path="res://Skripte/drag_n_drop.gd" id="2_xjauy"]
 [ext_resource type="PackedScene" uid="uid://cwqk16wo28yli" path="res://Szenen/board/wire.tscn" id="3_ca8lf"]
 [ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="4_ca8lf"]
+[ext_resource type="PackedScene" uid="uid://i473uchygket" path="res://Szenen/board/wire_head.tscn" id="4_os3hy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fogk0"]
 size = Vector2(100, 50)
 
 [node name="LogicGate" type="Node2D" unique_id=630047478]
+z_index = 1
 script = ExtResource("1_paudg")
+gate_type = null
 
 [node name="Area2D" type="Area2D" parent="." unique_id=638401551]
 script = ExtResource("2_xjauy")
@@ -30,24 +33,9 @@ grow_vertical = 2
 mouse_filter = 1
 color = Color(0, 0, 0, 0.5019608)
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1879232404]
-z_index = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -50.0
-offset_top = -25.0
-offset_right = 50.0
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="CenterContainer" unique_id=1718775879]
-layout_mode = 2
-text = "Logic"
-
 [node name="Wire" parent="." unique_id=1956494375 instance=ExtResource("3_ca8lf")]
-position = Vector2(50, 0)
+
+[node name="WireHead" parent="Wire" unique_id=1228259660 instance=ExtResource("4_os3hy")]
 
 [node name="InputSlot" parent="." unique_id=1427703755 instance=ExtResource("4_ca8lf")]
 position = Vector2(-50, -15)
