@@ -17,14 +17,14 @@ func _input(event: InputEvent) -> void:
 		if not Global.dragging and draggable and event.pressed:
 			Global.dragging = true
 			dragging = true
-			drag_offset = get_parent().position - get_global_mouse_position()
+			drag_offset = get_parent().global_position - get_global_mouse_position()
 		elif dragging and not event.pressed:
 			Global.dragging = false
 			dragging = false
 			dropped.emit()
 	
 	if event is InputEventMouseMotion and dragging:
-		get_parent().position = get_global_mouse_position() + drag_offset
+		get_parent().global_position = get_global_mouse_position() + drag_offset
 
 
 func _on_mouse_entered() -> void:

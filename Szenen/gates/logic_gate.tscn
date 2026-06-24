@@ -11,6 +11,7 @@ size = Vector2(100, 50)
 
 [node name="LogicGate" type="Node2D" unique_id=630047478]
 z_index = 1
+scale = Vector2(2.5, 2.5)
 script = ExtResource("1_paudg")
 gate_type = null
 
@@ -21,6 +22,7 @@ script = ExtResource("2_xjauy")
 shape = SubResource("RectangleShape2D_fogk0")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1717983696]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

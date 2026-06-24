@@ -2,22 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://23bn052jev1b" path="res://Szenen/board/level_background.tscn" id="1_wajws"]
 [ext_resource type="PackedScene" uid="uid://bx6ldv0hjipku" path="res://Szenen/board/gate_slot.tscn" id="3_0idqk"]
-
-[ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="3_qgka3"]
-[ext_resource type="Texture2D" uid="uid://08btemwbik6" path="res://Assets/Haus.png" id="3_xdtia"]
-[ext_resource type="Script" uid="uid://ybqn5ir3wscm" path="res://Skripte/button_home.gd" id="4_xdj3n"]
-[ext_resource type="Texture2D" uid="uid://7vaatxjsguqr" path="res://Assets/Klemmbrett.png" id="5_ifj4h"]
-[ext_resource type="Script" uid="uid://cbkjgwwv2m8wk" path="res://Skripte/cheatsheet.gd" id="5_j67hw"]
-
-[ext_resource type="Texture2D" uid="uid://d1884aiakmgc5" path="res://Assets/medida-symbol-cheatsheet.png" id="3_1b6ah"]
-[ext_resource type="Texture2D" uid="uid://cb83i1wajko0u" path="res://Assets/medida-symbol-home.png" id="3_j67hw"]
 [ext_resource type="PackedScene" uid="uid://cwqk16wo28yli" path="res://Szenen/board/wire.tscn" id="3_xdj3n"]
+[ext_resource type="Texture2D" uid="uid://08btemwbik6" path="res://Assets/Haus.png" id="3_xdtia"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="4_1b6ah"]
 [ext_resource type="PackedScene" uid="uid://i473uchygket" path="res://Szenen/board/wire_head.tscn" id="4_ifj4h"]
+[ext_resource type="Script" uid="uid://ybqn5ir3wscm" path="res://Skripte/button_home.gd" id="4_xdj3n"]
+[ext_resource type="Texture2D" uid="uid://7vaatxjsguqr" path="res://Assets/Klemmbrett.png" id="5_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://b2pvudbkf5qhe" path="res://Szenen/board/energy_source.tscn" id="7_jybfl"]
-[ext_resource type="Script" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
+[ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://bem838awj8sty" path="res://Szenen/board/lightbulb.tscn" id="10_lcnn6"]
-
 
 [node name="Main" type="Control" unique_id=1387783340]
 layout_mode = 3
@@ -33,43 +26,33 @@ layout_mode = 1
 
 [node name="ButtonHome" type="TextureButton" parent="." unique_id=1180478061]
 layout_mode = 0
-offset_left = 1056.0
-offset_top = 342.0
-offset_right = 2643.0
-offset_bottom = 2587.0
-scale = Vector2(0.04, 0.04)
+offset_left = 2919.0
+offset_top = 543.0
+offset_right = 4506.0
+offset_bottom = 2788.0
+scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("3_xdtia")
 stretch_mode = 4
 script = ExtResource("4_xdj3n")
 
 [node name="ButtonCheatsheet" type="TextureButton" parent="." unique_id=1018834203]
 layout_mode = 0
-offset_left = 1056.0
-offset_top = 230.0
-offset_right = 2187.0
-offset_bottom = 1830.0
-scale = Vector2(0.05, 0.05)
+offset_left = 2943.0
+offset_top = 817.0
+offset_right = 4074.0
+offset_bottom = 2417.0
+scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("5_ifj4h")
 stretch_mode = 0
 script = ExtResource("8_ifj4h")
 
-[node name="Cheatsheet" type="TextureRect" parent="." unique_id=78427446]
-visible = false
-layout_mode = 0
-offset_left = 918.00006
-offset_top = 177.00002
-offset_right = 2049.0
-offset_bottom = 1777.0
-scale = Vector2(0.15, 0.15)
-texture = ExtResource("4_1b6ah")
-
 [node name="Board" type="Node2D" parent="." unique_id=1296858111]
 
 [node name="EnergySource" parent="Board" unique_id=1477292166 instance=ExtResource("7_jybfl")]
-offset_left = 231.0
-offset_top = 251.0
-offset_right = 247.0
-offset_bottom = 267.0
+offset_left = 923.99994
+offset_top = 564.00006
+offset_right = 939.99994
+offset_bottom = 580.00006
 
 [node name="Wire" parent="Board/EnergySource" unique_id=1956494375 instance=ExtResource("3_xdj3n")]
 position = Vector2(16, 8)
@@ -84,10 +67,10 @@ position = Vector2(16, 8)
 position = Vector2(121, -16)
 
 [node name="EnergySource2" parent="Board" unique_id=1745540788 instance=ExtResource("7_jybfl")]
-offset_left = 233.0
-offset_top = 382.0
-offset_right = 249.0
-offset_bottom = 398.0
+offset_left = 924.99994
+offset_top = 893.0
+offset_right = 940.99994
+offset_bottom = 909.0
 
 [node name="Wire" parent="Board/EnergySource2" unique_id=758820697 instance=ExtResource("3_xdj3n")]
 position = Vector2(16, 8)
@@ -102,7 +85,7 @@ position = Vector2(16, 8)
 position = Vector2(121, -16)
 
 [node name="GateSlot" parent="Board" unique_id=1456416178 instance=ExtResource("3_0idqk")]
-position = Vector2(418, 258)
+position = Vector2(1388, 581)
 
 [node name="Wire" parent="Board/GateSlot" unique_id=576165423 instance=ExtResource("3_xdj3n")]
 
@@ -110,7 +93,7 @@ position = Vector2(418, 258)
 position = Vector2(142, 58)
 
 [node name="GateSlot2" parent="Board" unique_id=696068131 instance=ExtResource("3_0idqk")]
-position = Vector2(420, 389)
+position = Vector2(1393, 910)
 
 [node name="Wire" parent="Board/GateSlot2" unique_id=1263036243 instance=ExtResource("3_xdj3n")]
 
@@ -118,7 +101,7 @@ position = Vector2(420, 389)
 position = Vector2(140, -43)
 
 [node name="GateSlot3" parent="Board" unique_id=92493630 instance=ExtResource("3_0idqk")]
-position = Vector2(660, 331)
+position = Vector2(1990, 766.00006)
 
 [node name="Wire" parent="Board/GateSlot3" unique_id=2074185713 instance=ExtResource("3_xdj3n")]
 
@@ -126,7 +109,18 @@ position = Vector2(660, 331)
 position = Vector2(112, -1)
 
 [node name="Lightbulb" parent="Board" unique_id=1679660489 instance=ExtResource("10_lcnn6")]
-position = Vector2(842, 330)
+position = Vector2(2454, 766.00006)
+
+[node name="Cheatsheet" type="TextureRect" parent="." unique_id=78427446]
+visible = false
+z_index = 1
+layout_mode = 0
+offset_left = 631.0
+offset_top = -409.0
+offset_right = 1762.0
+offset_bottom = 1191.0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_1b6ah")
 
 [connection signal="pressed" from="ButtonHome" to="ButtonHome" method="_on_pressed"]
 [connection signal="pressed" from="ButtonCheatsheet" to="ButtonCheatsheet" method="_on_pressed"]

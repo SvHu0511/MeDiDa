@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dufy3g1s6xknv"]
 
-[ext_resource type="Texture2D" uid="uid://irvpoladxjg4" path="res://Assets/and-gate.webp" id="1_1xo4q"]
 [ext_resource type="PackedScene" uid="uid://pskpf4tb4xbx" path="res://Szenen/gates/logic_gate.tscn" id="2_f6n8f"]
+[ext_resource type="Texture2D" uid="uid://b5cssn1mtpvdx" path="res://Assets/AND.png" id="2_tlgs0"]
 
 [node name="AndGate" type="Node2D" unique_id=1830215857]
 
@@ -9,6 +9,6 @@
 gate_type = "AND"
 
 [node name="Image" type="Sprite2D" parent="LogicGate" unique_id=1161490137]
-position = Vector2(-1.9669533e-06, 1.66893e-06)
-scale = Vector2(0.083333336, 0.10752688)
-texture = ExtResource("1_1xo4q")
+position = Vector2(0, 3.0994415e-06)
+scale = Vector2(0.099999994, 0.08880995)
+texture = ExtResource("2_tlgs0")

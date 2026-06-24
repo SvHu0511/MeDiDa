@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="2_jmn00"]
 
 [node name="Lightbulb" type="Node2D" unique_id=1679660489]
+scale = Vector2(2.5, 2.5)
 script = ExtResource("1_8gegj")
 
 [node name="InputSlot" parent="." unique_id=1196777265 instance=ExtResource("2_jmn00")]

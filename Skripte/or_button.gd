@@ -10,8 +10,6 @@ func on_pressed():
 	print("pressed OR")
 	var instance = or_gate_scene.instantiate()
 	instance.position = Vector2(600, 100)
-	#var desired_size = Vector2(100, 50)
-	#var texture_size = instance.get_child(0).texture.get_size()
-	#instance.scale = desired_size / texture_size
+
 	get_tree().current_scene.add_child(instance)
 	print("done creating")
