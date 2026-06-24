@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bci0yuwyahvsx"
-path="res://.godot/imported/Katze.png-cc54a824dc9ced9a5b7124f0ee165255.ctex"
+uid="uid://ngnidbuerj37"
+path="res://.godot/imported/OR.png-2f887dde824f7bc647e383be842d896e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Katze.png"
-dest_files=["res://.godot/imported/Katze.png-cc54a824dc9ced9a5b7124f0ee165255.ctex"]
+source_file="res://Assets/OR.png"
+dest_files=["res://.godot/imported/OR.png-2f887dde824f7bc647e383be842d896e.ctex"]
 
 [params]
 

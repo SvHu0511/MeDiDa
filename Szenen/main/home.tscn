@@ -1,15 +1,82 @@
 [gd_scene format=3 uid="uid://bye2x5layv23n"]
 
-[ext_resource type="Texture2D" uid="uid://bci0yuwyahvsx" path="res://Assets/Katze.png" id="1_xol5m"]
-[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/level.gd" id="2_j8et0"]
+[ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_xol5m"]
+[ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_g4m28"]
+[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/button_levelauswahl.gd" id="2_j8et0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlq2e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85964066, 0.49240714, 0.24421984, 1)
+border_width_left = 80
+border_width_top = 80
+border_width_right = 80
+border_width_bottom = 80
+border_color = Color(0.7583978, 0.4045801, 0.19248879, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j8et0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4m28"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
 
 [node name="home" type="Node2D" unique_id=187079477]
 
-[node name="level" type="TextureButton" parent="." unique_id=769812052]
-offset_right = 1500.0
-offset_bottom = 1500.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2014558531]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_xol5m")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="level" type="Button" parent="." unique_id=436015060]
+offset_left = 675.0
+offset_top = 399.0
+offset_right = 4201.0
+offset_bottom = 1329.0
 scale = Vector2(0.1, 0.1)
-texture_normal = ExtResource("1_xol5m")
+theme_override_fonts/font = ExtResource("2_g4m28")
+theme_override_font_sizes/font_size = 500
+theme_override_styles/normal = SubResource("StyleBoxFlat_xlq2e")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_j8et0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_g4m28")
+text = "LEVEL AUSWAHL"
 script = ExtResource("2_j8et0")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1504199196]
+offset_left = 168.0
+offset_top = 16.0
+offset_right = 762.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("2_g4m28")
+theme_override_font_sizes/font_size = 100
+text = "Logik mit Katzen"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="level" to="level" method="_on_pressed"]

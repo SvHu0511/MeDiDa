@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cop5pwyf4agbt"
-path="res://.godot/imported/or-gate-symbol.jpg-0aee2f458186d6d2f561c05340f0caab.ctex"
+uid="uid://b5cssn1mtpvdx"
+path="res://.godot/imported/AND.png-bb9e6b9b1bcde3894dc8ff56012e22be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/or-gate-symbol.jpg"
-dest_files=["res://.godot/imported/or-gate-symbol.jpg-0aee2f458186d6d2f561c05340f0caab.ctex"]
+source_file="res://Assets/AND.png"
+dest_files=["res://.godot/imported/AND.png-bb9e6b9b1bcde3894dc8ff56012e22be.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmovwdv812vht"
-path="res://.godot/imported/Werkstattgefiltert.png-cb378891a40d6179ef5f56f9564c340a.ctex"
+uid="uid://b6ylw6j0bhe6o"
+path="res://.godot/imported/Pfeil.png-4afa4b1b33b336778330865916ad05e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Werkstattgefiltert.png"
-dest_files=["res://.godot/imported/Werkstattgefiltert.png-cb378891a40d6179ef5f56f9564c340a.ctex"]
+source_file="res://Assets/Pfeil.png"
+dest_files=["res://.godot/imported/Pfeil.png-4afa4b1b33b336778330865916ad05e6.ctex"]
 
 [params]
 

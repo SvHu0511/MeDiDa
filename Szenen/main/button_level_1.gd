@@ -12,4 +12,8 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed():
-	get_tree().change_scene_to_file("res://Szenen/main/level.tscn")
+	get_tree().change_scene_to_file("res://Szenen/main/main.tscn")
+
+
+func _on_texture_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Szenen/main/home.tscn")

@@ -1,7 +1,5 @@
 [gd_scene format=3 uid="uid://ltij02l833kn"]
 
-[ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_rrkrr"]
-
 [node name="OrGate" type="Panel" unique_id=997521103]
 offset_right = 60.0
 offset_bottom = 60.0
@@ -16,7 +14,6 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="CenterContainer" unique_id=1089945737]
 layout_mode = 2
-texture = ExtResource("2_rrkrr")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="CenterContainer" unique_id=1718775879]
