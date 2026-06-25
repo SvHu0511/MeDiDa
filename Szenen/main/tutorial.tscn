@@ -24,6 +24,30 @@ corner_radius_top_right = 150
 corner_radius_bottom_right = 150
 corner_radius_bottom_left = 150
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4enan"]
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qlv"]
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+
 [node name="Tutorial" type="Control" unique_id=316033721]
 layout_mode = 3
 anchors_preset = 0
@@ -133,7 +157,26 @@ offset_bottom = 330.0
 theme_override_fonts/font = ExtResource("10_tvjhf")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_4hjyh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4enan")
+theme_override_styles/hover = SubResource("StyleBoxFlat_16qlv")
 text = "WEITER"
 script = ExtResource("11_vmw6g")
 
-[connection signal="pressed" from="Weiter" to="Weiter" method="_on_pressed"]
+[node name="Zurück" type="Button" parent="." unique_id=1139414402]
+visible = false
+layout_mode = 0
+offset_left = 68.0
+offset_top = 130.0
+offset_right = 468.0
+offset_bottom = 330.0
+theme_override_fonts/font = ExtResource("10_tvjhf")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hjyh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4enan")
+theme_override_styles/hover = SubResource("StyleBoxFlat_16qlv")
+text = "ZURÜCK
+"
+script = ExtResource("11_vmw6g")
+
+[connection signal="pressed" from="Weiter" to="Weiter" method="_on_pressed_weiter"]
+[connection signal="pressed" from="Zurück" to="Weiter" method="_on_pressed_zuruck"]

@@ -12,7 +12,10 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_pressed():
+func _on_pressed_weiter():
+	if slide == 1:
+		get_node("../Zurück").visible = true;
+	
 	var picture = find(slide);
 	get_node(picture).visible = !get_node(picture).visible
 	slide += 1;
@@ -23,6 +26,21 @@ func _on_pressed():
 		picture = find(slide);
 		get_node(picture).visible = !get_node(picture).visible
 	
+	
+func _on_pressed_zuruck():
+	slide -= 1;
+	
+	if slide == 1:
+		get_node("../Zurück").visible = false;
+
+	var picture = find(slide + 1);
+	get_node(picture).visible = !get_node(picture).visible
+	picture = find(slide);
+	get_node(picture).visible = !get_node(picture).visible
+	
+	
+	
+
 	
 func find(slide):
 	var picture;
