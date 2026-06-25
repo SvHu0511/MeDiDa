@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://08btemwbik6" path="res://Assets/Haus.png" id="3_xdtia"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="4_1b6ah"]
 [ext_resource type="PackedScene" uid="uid://i473uchygket" path="res://Szenen/board/wire_head.tscn" id="4_ifj4h"]
-[ext_resource type="Script" path="res://Skripte/button_home.gd" id="4_xdj3n"]
+[ext_resource type="Script" uid="uid://ybqn5ir3wscm" path="res://Skripte/button_home.gd" id="4_xdj3n"]
 [ext_resource type="Texture2D" uid="uid://7vaatxjsguqr" path="res://Assets/Klemmbrett.png" id="5_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://b2pvudbkf5qhe" path="res://Szenen/board/energy_source.tscn" id="7_jybfl"]
-[ext_resource type="Script" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
+[ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://bem838awj8sty" path="res://Szenen/board/lightbulb.tscn" id="10_lcnn6"]
 
 [node name="Main" type="Control" unique_id=1387783340]
@@ -46,43 +46,66 @@ texture_normal = ExtResource("5_ifj4h")
 stretch_mode = 0
 script = ExtResource("8_ifj4h")
 
+[node name="Cheatsheet" type="TextureRect" parent="." unique_id=78427446]
+visible = false
+z_index = 5
+layout_mode = 0
+offset_left = 631.0
+offset_top = -409.0
+offset_right = 1762.0
+offset_bottom = 1191.0
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_1b6ah")
+
 [node name="Board" type="Node2D" parent="." unique_id=1296858111]
 
 [node name="EnergySource" parent="Board" unique_id=1477292166 instance=ExtResource("7_jybfl")]
-offset_left = 923.99994
-offset_top = 564.00006
-offset_right = 939.99994
-offset_bottom = 580.00006
+offset_left = 924.0
+offset_top = 600.0
+offset_right = 940.0
+offset_bottom = 616.0
 
 [node name="Wire" parent="Board/EnergySource" unique_id=1956494375 instance=ExtResource("3_xdj3n")]
-position = Vector2(16, 8)
+position = Vector2(16.000025, 7.1999755)
 
 [node name="WireHead" parent="Board/EnergySource/Wire" unique_id=1228259660 instance=ExtResource("4_ifj4h")]
-position = Vector2(121, 14)
+position = Vector2(121.2, -0.79997444)
 
-[node name="Wire2" parent="Board/EnergySource" unique_id=105128760 instance=ExtResource("3_xdj3n")]
-position = Vector2(16, 8)
+[node name="EnergySource2" parent="Board" unique_id=2099856908 instance=ExtResource("7_jybfl")]
+offset_left = 924.00006
+offset_top = 521.00006
+offset_right = 940.00006
+offset_bottom = 537.00006
 
-[node name="WireHead" parent="Board/EnergySource/Wire2" unique_id=940655564 instance=ExtResource("4_ifj4h")]
-position = Vector2(121, -16)
+[node name="Wire" parent="Board/EnergySource2" unique_id=1730851778 instance=ExtResource("3_xdj3n")]
+position = Vector2(16.000025, 7.1999755)
 
-[node name="EnergySource2" parent="Board" unique_id=1745540788 instance=ExtResource("7_jybfl")]
-offset_left = 924.99994
-offset_top = 893.0
-offset_right = 940.99994
-offset_bottom = 909.0
+[node name="WireHead" parent="Board/EnergySource2/Wire" unique_id=379162228 instance=ExtResource("4_ifj4h")]
+position = Vector2(121.2, -0.79997444)
 
-[node name="Wire" parent="Board/EnergySource2" unique_id=758820697 instance=ExtResource("3_xdj3n")]
-position = Vector2(16, 8)
+[node name="EnergySource3" parent="Board" unique_id=1043002292 instance=ExtResource("7_jybfl")]
+offset_left = 924.00006
+offset_top = 851.00006
+offset_right = 940.00006
+offset_bottom = 867.00006
 
-[node name="WireHead" parent="Board/EnergySource2/Wire" unique_id=1905797769 instance=ExtResource("4_ifj4h")]
-position = Vector2(121, 14)
+[node name="Wire" parent="Board/EnergySource3" unique_id=175211549 instance=ExtResource("3_xdj3n")]
+position = Vector2(16.000025, 7.1999755)
 
-[node name="Wire2" parent="Board/EnergySource2" unique_id=20976738 instance=ExtResource("3_xdj3n")]
-position = Vector2(16, 8)
+[node name="WireHead" parent="Board/EnergySource3/Wire" unique_id=245440901 instance=ExtResource("4_ifj4h")]
+position = Vector2(121.2, -0.79997444)
 
-[node name="WireHead" parent="Board/EnergySource2/Wire2" unique_id=1514725398 instance=ExtResource("4_ifj4h")]
-position = Vector2(121, -16)
+[node name="EnergySource4" parent="Board" unique_id=108424590 instance=ExtResource("7_jybfl")]
+offset_left = 924.00006
+offset_top = 929.0
+offset_right = 940.00006
+offset_bottom = 945.0
+
+[node name="Wire" parent="Board/EnergySource4" unique_id=898423465 instance=ExtResource("3_xdj3n")]
+position = Vector2(16.000025, 7.1999755)
+
+[node name="WireHead" parent="Board/EnergySource4/Wire" unique_id=1336030679 instance=ExtResource("4_ifj4h")]
+position = Vector2(121.2, -0.79997444)
 
 [node name="GateSlot" parent="Board" unique_id=1456416178 instance=ExtResource("3_0idqk")]
 position = Vector2(1388, 581)
@@ -110,17 +133,6 @@ position = Vector2(112, -1)
 
 [node name="Lightbulb" parent="Board" unique_id=1679660489 instance=ExtResource("10_lcnn6")]
 position = Vector2(2454, 766.00006)
-
-[node name="Cheatsheet" type="TextureRect" parent="." unique_id=78427446]
-visible = false
-z_index = 5
-layout_mode = 0
-offset_left = 631.0
-offset_top = -409.0
-offset_right = 1762.0
-offset_bottom = 1191.0
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("4_1b6ah")
 
 [connection signal="pressed" from="ButtonHome" to="ButtonHome" method="_on_pressed"]
 [connection signal="pressed" from="ButtonCheatsheet" to="ButtonCheatsheet" method="_on_pressed"]
