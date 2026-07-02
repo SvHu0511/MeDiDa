@@ -9,7 +9,7 @@ func _ready() -> void:
 func on_pressed():
 	print("pressed OR")
 	var instance = or_gate_scene.instantiate()
-	instance.position = Vector2(1700, 1300)
+	instance.position = Vector2(1000, 900)
 
 	get_tree().current_scene.add_child(instance)
 	print("done creating")

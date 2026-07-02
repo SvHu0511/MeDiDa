@@ -102,17 +102,17 @@ corner_detail = 5
 [node name="level" type="Node2D" unique_id=700515909]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1257262020]
-offset_right = 3180.0
-offset_bottom = 1566.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 texture = ExtResource("1_1huob")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="tutorial" type="Button" parent="." unique_id=2085664683]
-offset_left = 2181.0
-offset_top = 802.0
-offset_right = 5707.0
-offset_bottom = 1732.0
+offset_left = 1088.0001
+offset_top = 526.0
+offset_right = 4614.0
+offset_bottom = 1456.0
 scale = Vector2(0.2, 0.2)
 theme_override_fonts/font = ExtResource("2_2h64o")
 theme_override_font_sizes/font_size = 500
@@ -135,10 +135,10 @@ text = "Levelauswahl"
 metadata/_edit_use_anchors_ = true
 
 [node name="level1" type="Button" parent="." unique_id=114566257]
-offset_left = 2181.0
-offset_top = 1051.0
-offset_right = 5707.0
-offset_bottom = 1981.0
+offset_left = 1098.0001
+offset_top = 768.0
+offset_right = 4624.0
+offset_bottom = 1698.0
 scale = Vector2(0.2, 0.2)
 theme_override_fonts/font = ExtResource("2_2h64o")
 theme_override_font_sizes/font_size = 500

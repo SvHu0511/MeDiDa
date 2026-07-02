@@ -48,20 +48,20 @@ corner_detail = 5
 [node name="home" type="Node2D" unique_id=187079477]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2014558531]
-offset_right = 3180.0
-offset_bottom = 1566.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 texture = ExtResource("1_xol5m")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="level" type="Button" parent="." unique_id=436015060]
-offset_left = 2075.0
-offset_top = 1103.0
-offset_right = 5601.0
-offset_bottom = 2033.0
+offset_left = 1022.0
+offset_top = 685.0
+offset_right = 4148.0
+offset_bottom = 1252.0
 scale = Vector2(0.25, 0.25)
 theme_override_fonts/font = ExtResource("2_g4m28")
-theme_override_font_sizes/font_size = 500
+theme_override_font_sizes/font_size = 400
 theme_override_styles/normal = SubResource("StyleBoxFlat_xlq2e")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_j8et0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_g4m28")
@@ -70,12 +70,12 @@ script = ExtResource("2_j8et0")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1504199196]
-offset_left = 608.0
-offset_top = 54.0
-offset_right = 2389.0
-offset_bottom = 390.0
+offset_left = 265.0
+offset_top = 37.0
+offset_right = 2046.0
+offset_bottom = 373.0
 theme_override_fonts/font = ExtResource("2_g4m28")
-theme_override_font_sizes/font_size = 300
+theme_override_font_sizes/font_size = 250
 text = "Logik mit Katzen"
 metadata/_edit_use_anchors_ = true
 
