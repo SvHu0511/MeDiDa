@@ -11,7 +11,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	var all_occupied = true
-	#print(root_node.get_node("GateSlots").get_children())
 	for slot in root_node.get_node("GateSlots").get_children():
 		if slot.occupied == false:
 			all_occupied = false

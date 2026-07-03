@@ -113,36 +113,38 @@ position = Vector2(16.000025, 7.1999755)
 [node name="WireHead" parent="Board/EnergySource4/Wire" unique_id=1336030679 instance=ExtResource("4_ifj4h")]
 position = Vector2(118.66663, -29.199999)
 
-[node name="GateSlot" parent="Board" unique_id=1456416178 instance=ExtResource("3_0idqk")]
+[node name="GateSlots" type="CanvasGroup" parent="Board" unique_id=682563198]
+
+[node name="GateSlot" parent="Board/GateSlots" unique_id=1456416178 instance=ExtResource("3_0idqk")]
 position = Vector2(623, 340)
 scale = Vector2(1.5, 1.5)
 
-[node name="Wire" parent="Board/GateSlot" unique_id=576165423 instance=ExtResource("3_xdj3n")]
+[node name="Wire" parent="Board/GateSlots/GateSlot" unique_id=576165423 instance=ExtResource("3_xdj3n")]
 scale = Vector2(1.5, 1.5)
 
-[node name="WireHead" parent="Board/GateSlot/Wire" unique_id=171058055 instance=ExtResource("4_ifj4h")]
+[node name="WireHead" parent="Board/GateSlots/GateSlot/Wire" unique_id=171058055 instance=ExtResource("4_ifj4h")]
 position = Vector2(142.22223, 72)
 scale = Vector2(0.75, 0.75)
 
-[node name="GateSlot2" parent="Board" unique_id=696068131 instance=ExtResource("3_0idqk")]
+[node name="GateSlot2" parent="Board/GateSlots" unique_id=696068131 instance=ExtResource("3_0idqk")]
 position = Vector2(629.00006, 668)
 scale = Vector2(1.5, 1.5)
 
-[node name="Wire" parent="Board/GateSlot2" unique_id=1263036243 instance=ExtResource("3_xdj3n")]
+[node name="Wire" parent="Board/GateSlots/GateSlot2" unique_id=1263036243 instance=ExtResource("3_xdj3n")]
 scale = Vector2(1.5, 1.5)
 
-[node name="WireHead" parent="Board/GateSlot2/Wire" unique_id=1874855736 instance=ExtResource("4_ifj4h")]
+[node name="WireHead" parent="Board/GateSlots/GateSlot2/Wire" unique_id=1874855736 instance=ExtResource("4_ifj4h")]
 position = Vector2(139.99997, -52.444443)
 scale = Vector2(0.75, 0.75)
 
-[node name="GateSlot3" parent="Board" unique_id=92493630 instance=ExtResource("3_0idqk")]
+[node name="GateSlot3" parent="Board/GateSlots" unique_id=92493630 instance=ExtResource("3_0idqk")]
 position = Vector2(1091, 527)
 scale = Vector2(1.5, 1.5)
 
-[node name="Wire" parent="Board/GateSlot3" unique_id=2074185713 instance=ExtResource("3_xdj3n")]
+[node name="Wire" parent="Board/GateSlots/GateSlot3" unique_id=2074185713 instance=ExtResource("3_xdj3n")]
 scale = Vector2(1.5, 1.5)
 
-[node name="WireHead" parent="Board/GateSlot3/Wire" unique_id=61474050 instance=ExtResource("4_ifj4h")]
+[node name="WireHead" parent="Board/GateSlots/GateSlot3/Wire" unique_id=61474050 instance=ExtResource("4_ifj4h")]
 position = Vector2(112, -1)
 scale = Vector2(0.75, 0.75)
 
