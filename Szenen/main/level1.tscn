@@ -1,0 +1,222 @@
+[gd_scene format=3 uid="uid://bde84t3604h38"]
+
+[ext_resource type="PackedScene" uid="uid://23bn052jev1b" path="res://Szenen/board/level_background.tscn" id="1_sq0d5"]
+[ext_resource type="PackedScene" uid="uid://cwqk16wo28yli" path="res://Szenen/board/wire.tscn" id="2_h06od"]
+[ext_resource type="PackedScene" uid="uid://i473uchygket" path="res://Szenen/board/wire_head.tscn" id="3_xby5y"]
+[ext_resource type="PackedScene" uid="uid://bx6ldv0hjipku" path="res://Szenen/board/gate_slot.tscn" id="4_h06od"]
+[ext_resource type="PackedScene" uid="uid://bem838awj8sty" path="res://Szenen/board/lightbulb.tscn" id="5_xby5y"]
+
+[node name="Control" type="Control" unique_id=1738690684]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level Background" parent="." unique_id=559517426 instance=ExtResource("1_sq0d5")]
+layout_mode = 1
+offset_right = -1920.0
+offset_bottom = -1080.0
+
+[node name="Source1" type="Label" parent="." unique_id=1063398982]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 199.0
+offset_right = 365.0
+offset_bottom = 241.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source1" unique_id=1956494375 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source1/Wire" unique_id=1228259660 instance=ExtResource("3_xby5y")]
+position = Vector2(95, 21)
+
+[node name="Source2" type="Label" parent="." unique_id=669747157]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 294.0
+offset_right = 368.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source2" unique_id=789276776 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source2/Wire" unique_id=1119986584 instance=ExtResource("3_xby5y")]
+position = Vector2(88, -41)
+
+[node name="Source3" type="Label" parent="." unique_id=697023731]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 386.0
+offset_right = 363.0
+offset_bottom = 428.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source3" unique_id=1848367428 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source3/Wire" unique_id=907181236 instance=ExtResource("3_xby5y")]
+position = Vector2(99, 25)
+
+[node name="Source4" type="Label" parent="." unique_id=1959680708]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 496.0
+offset_right = 368.0
+offset_bottom = 538.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source4" unique_id=400742998 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source4/Wire" unique_id=1425353280 instance=ExtResource("3_xby5y")]
+position = Vector2(94, -28)
+
+[node name="Source5" type="Label" parent="." unique_id=1631218865]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 572.0
+offset_right = 365.0
+offset_bottom = 614.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source5" unique_id=52035041 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source5/Wire" unique_id=742788028 instance=ExtResource("3_xby5y")]
+position = Vector2(86, 21)
+
+[node name="Source6" type="Label" parent="." unique_id=1522565154]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 659.0
+offset_right = 363.0
+offset_bottom = 701.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source6" unique_id=2068792356 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source6/Wire" unique_id=1293994697 instance=ExtResource("3_xby5y")]
+position = Vector2(88, -27)
+
+[node name="Source7" type="Label" parent="." unique_id=632752092]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 756.0
+offset_right = 359.0
+offset_bottom = 798.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source7" unique_id=963910650 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source7/Wire" unique_id=254108532 instance=ExtResource("3_xby5y")]
+position = Vector2(94, 13)
+
+[node name="Source8" type="Label" parent="." unique_id=909677246]
+layout_mode = 0
+offset_left = 327.0
+offset_top = 836.0
+offset_right = 367.0
+offset_bottom = 878.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Wire" parent="Source8" unique_id=1761570974 instance=ExtResource("2_h06od")]
+position = Vector2(17, 24)
+
+[node name="WireHead" parent="Source8/Wire" unique_id=1094214594 instance=ExtResource("3_xby5y")]
+position = Vector2(88, -27)
+
+[node name="GateSlot" parent="." unique_id=1456416178 instance=ExtResource("4_h06od")]
+position = Vector2(483, 259)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot" unique_id=912043073 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot/Wire" unique_id=1578005347 instance=ExtResource("3_xby5y")]
+position = Vector2(32, 31.666666)
+
+[node name="GateSlot2" parent="." unique_id=18825157 instance=ExtResource("4_h06od")]
+position = Vector2(490, 458)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot2" unique_id=616291101 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot2/Wire" unique_id=425331738 instance=ExtResource("3_xby5y")]
+position = Vector2(29.333332, -68.33333)
+
+[node name="GateSlot3" parent="." unique_id=1186014122 instance=ExtResource("4_h06od")]
+position = Vector2(478, 630)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot3" unique_id=2069048721 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot3/Wire" unique_id=643024370 instance=ExtResource("3_xby5y")]
+position = Vector2(32, 27.666666)
+
+[node name="GateSlot4" parent="." unique_id=1592017702 instance=ExtResource("4_h06od")]
+position = Vector2(481, 816)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot4" unique_id=1923880694 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot4/Wire" unique_id=779682962 instance=ExtResource("3_xby5y")]
+position = Vector2(32.666664, -64.33333)
+
+[node name="GateSlot5" parent="." unique_id=180735336 instance=ExtResource("4_h06od")]
+position = Vector2(684, 333)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot5" unique_id=1798098131 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot5/Wire" unique_id=934497197 instance=ExtResource("3_xby5y")]
+position = Vector2(40.666664, 92.33333)
+
+[node name="GateSlot6" parent="." unique_id=1438765195 instance=ExtResource("4_h06od")]
+position = Vector2(678, 699)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot6" unique_id=149904740 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot6/Wire" unique_id=450639658 instance=ExtResource("3_xby5y")]
+position = Vector2(46, -121.666664)
+
+[node name="GateSlot7" parent="." unique_id=1237962022 instance=ExtResource("4_h06od")]
+position = Vector2(896, 498)
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="GateSlot7" unique_id=1120701361 instance=ExtResource("2_h06od")]
+position = Vector2(52, 1)
+
+[node name="WireHead" parent="GateSlot7/Wire" unique_id=742569329 instance=ExtResource("3_xby5y")]
+position = Vector2(54, -7)
+
+[node name="Label" type="Label" parent="." unique_id=350529439]
+layout_mode = 0
+offset_left = 1065.0
+offset_top = 476.0
+offset_right = 1105.0
+offset_bottom = 518.0
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Lightbulb" parent="." unique_id=1679660489 instance=ExtResource("5_xby5y")]
+position = Vector2(1107.9999, 487.99997)

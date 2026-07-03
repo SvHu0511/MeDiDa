@@ -6,6 +6,7 @@
 [node name="OrGate" type="Node2D" unique_id=1057368650]
 
 [node name="LogicGate" parent="." unique_id=1790688396 instance=ExtResource("3_ld2k8")]
+scale = Vector2(1.5, 1.5)
 gate_type = "OR"
 
 [node name="Image" type="Sprite2D" parent="LogicGate" unique_id=1257452868]

@@ -6,6 +6,7 @@
 [node name="AndGate" type="Node2D" unique_id=1830215857]
 
 [node name="LogicGate" parent="." unique_id=1790688396 instance=ExtResource("2_f6n8f")]
+scale = Vector2(1.5, 1.5)
 gate_type = "AND"
 
 [node name="Image" type="Sprite2D" parent="LogicGate" unique_id=1161490137]
