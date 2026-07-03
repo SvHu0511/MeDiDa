@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_1huob"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_2h64o"]
-[ext_resource type="Script" uid="uid://dfp3hvl3vvt0i" path="res://Szenen/main/button_level_1.gd" id="3_62tcq"]
+[ext_resource type="Script" uid="uid://dfp3hvl3vvt0i" path="res://Skripte/button_level_1.gd" id="3_62tcq"]
 [ext_resource type="Script" uid="uid://bfdc5hwjlixsa" path="res://Skripte/level.gd" id="3_xir2a"]
 [ext_resource type="Texture2D" uid="uid://b6ylw6j0bhe6o" path="res://Assets/Pfeil.png" id="5_dn4ax"]
-[ext_resource type="Script" uid="uid://7x43dbdcwg5b" path="res://Szenen/main/back_home_button.gd" id="6_smde2"]
+[ext_resource type="Script" uid="uid://7x43dbdcwg5b" path="res://Skripte/back_home_button.gd" id="6_smde2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62tcq"]
 content_margin_left = 4.0
