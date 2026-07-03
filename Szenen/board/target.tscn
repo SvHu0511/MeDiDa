@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c5uadl3l2xe4x"]
+
+[ext_resource type="Script" uid="uid://bdyahktcwgwbd" path="res://Skripte/fixed_target.gd" id="1_3cqu0"]
+[ext_resource type="PackedScene" uid="uid://kdugptw3dxjh" path="res://Szenen/gates/input_slot.tscn" id="1_m55uq"]
+
+[node name="Target" type="Node2D" unique_id=650517076]
+script = ExtResource("1_3cqu0")
+
+[node name="InputSlot" parent="." unique_id=1196777265 instance=ExtResource("1_m55uq")]
+position = Vector2(-20, 0)
