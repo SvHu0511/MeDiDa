@@ -3,21 +3,19 @@
 [ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_1huob"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_2h64o"]
 [ext_resource type="Script" uid="uid://dfp3hvl3vvt0i" path="res://Skripte/button_level_1.gd" id="3_62tcq"]
-[ext_resource type="Script" uid="uid://bfdc5hwjlixsa" path="res://Skripte/level.gd" id="3_xir2a"]
 [ext_resource type="Texture2D" uid="uid://b6ylw6j0bhe6o" path="res://Assets/Pfeil.png" id="5_dn4ax"]
-[ext_resource type="Script" uid="uid://7x43dbdcwg5b" path="res://Skripte/back_home_button.gd" id="6_smde2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62tcq"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.85964066, 0.49240714, 0.24421984, 1)
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
 border_width_left = 80
 border_width_top = 80
 border_width_right = 80
 border_width_bottom = 80
-border_color = Color(0.7583978, 0.4045801, 0.19248879, 1)
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -41,7 +39,12 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 80
+border_width_top = 80
+border_width_right = 80
+border_width_bottom = 80
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -53,12 +56,12 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.6, 0.6039216, 0.5921569, 1)
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
 border_width_left = 80
 border_width_top = 80
 border_width_right = 80
 border_width_bottom = 80
-border_color = Color(0.43983996, 0.41662848, 0.38398692, 1)
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -70,12 +73,12 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.6, 0.6039216, 0.5921569, 1)
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
 border_width_left = 80
 border_width_top = 80
 border_width_right = 80
 border_width_bottom = 80
-border_color = Color(0.4392157, 0.41568628, 0.38431373, 1)
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -87,12 +90,12 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.6, 0.6039216, 0.5921569, 1)
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
 border_width_left = 80
 border_width_top = 80
 border_width_right = 80
 border_width_bottom = 80
-border_color = Color(0.4392157, 0.41568628, 0.38431373, 1)
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -147,7 +150,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_x442v")
 theme_override_styles/hover = SubResource("StyleBoxFlat_m0x4g")
 text = "LEVEL 1
 "
-script = ExtResource("3_xir2a")
 metadata/_edit_use_anchors_ = true
 
 [node name="backHome" type="TextureButton" parent="." unique_id=1497674136]
@@ -159,8 +161,7 @@ scale = Vector2(0.6, 0.6)
 texture_normal = ExtResource("5_dn4ax")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("6_smde2")
 
 [connection signal="pressed" from="tutorial" to="tutorial" method="_on_pressed"]
-[connection signal="pressed" from="level1" to="level1" method="_on_pressed"]
+[connection signal="pressed" from="level1" to="tutorial" method="on_level1_pressed"]
 [connection signal="pressed" from="backHome" to="tutorial" method="_on_texture_button_pressed"]

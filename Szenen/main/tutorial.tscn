@@ -163,6 +163,7 @@ text = "WEITER"
 script = ExtResource("11_vmw6g")
 
 [node name="Zurück" type="Button" parent="." unique_id=1139414402]
+visible = false
 layout_mode = 0
 offset_left = 68.0
 offset_top = 130.0

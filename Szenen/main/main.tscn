@@ -31,7 +31,7 @@ layout_mode = 0
 offset_left = 1701.0001
 offset_top = 350.0
 offset_right = 3288.0
-offset_bottom = 2595.0
+offset_bottom = 2079.9998
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("3_xdtia")
 stretch_mode = 4
@@ -52,12 +52,13 @@ script = ExtResource("8_ifj4h")
 visible = false
 z_index = 5
 layout_mode = 0
-offset_left = 631.0
-offset_top = -409.0
-offset_right = 1762.0
-offset_bottom = 1191.0
-scale = Vector2(1.5, 1.5)
+offset_left = 693.0
+offset_top = 174.0
+offset_right = 1193.0
+offset_bottom = 874.0
 texture = ExtResource("4_1b6ah")
+expand_mode = 1
+stretch_mode = 3
 
 [node name="Board" type="Node2D" parent="." unique_id=1296858111]
 
