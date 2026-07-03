@@ -20,3 +20,14 @@ func _process(delta: float) -> void:
 			solved = true
 		if $InputSlot.input != target:
 			solved = false
+
+
+func check_solution_button():
+	if solved:
+		root_node.get_node("GoodJob").visible = true
+		await get_tree().create_timer(3).timeout
+		root_node.get_node("GoodJob").visible = false
+	else:
+		root_node.get_node("TryAgain").visible = true
+		await get_tree().create_timer(3).timeout
+		root_node.get_node("TryAgain").visible = false
