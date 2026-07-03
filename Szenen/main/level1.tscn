@@ -25,8 +25,6 @@ mouse_filter = 1
 
 [node name="Level Background" parent="." unique_id=559517426 instance=ExtResource("1_sq0d5")]
 layout_mode = 1
-offset_right = -1920.0
-offset_bottom = -1080.0
 
 [node name="ButtonHome" type="TextureButton" parent="." unique_id=1105189169]
 layout_mode = 0
@@ -69,6 +67,26 @@ offset_top = 738.0
 offset_right = 1861.0
 offset_bottom = 866.0
 texture_normal = ExtResource("12_ttrgc")
+
+[node name="Solution" type="Label" parent="CheckSolutionButton" unique_id=175932474]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Check solution"
+
+[node name="DebugButton" type="TextureButton" parent="." unique_id=1774379165]
+layout_mode = 0
+offset_left = 1733.0
+offset_top = 913.0
+offset_right = 1861.0
+offset_bottom = 1041.0
+texture_normal = ExtResource("12_ttrgc")
+
+[node name="Debug" type="Label" parent="DebugButton" unique_id=1614965054]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Debug"
 
 [node name="Sources" type="CanvasGroup" parent="." unique_id=407573974]
 
@@ -306,3 +324,4 @@ PROBIERE ES NOCHMAL"
 [connection signal="pressed" from="ButtonHome" to="ButtonHome" method="_on_pressed"]
 [connection signal="pressed" from="ButtonCheatsheet" to="ButtonCheatsheet" method="_on_pressed"]
 [connection signal="pressed" from="CheckSolutionButton" to="Target" method="check_solution_button"]
+[connection signal="pressed" from="DebugButton" to="Target" method="debug_mode"]
