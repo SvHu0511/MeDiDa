@@ -13,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 
 [node name="Level Background" parent="." unique_id=559517426 instance=ExtResource("1_sq0d5")]
 layout_mode = 1
@@ -41,7 +42,7 @@ offset_top = 294.0
 offset_right = 368.0
 offset_bottom = 336.0
 theme_override_font_sizes/font_size = 30
-text = "1"
+text = "0"
 
 [node name="Wire" parent="Source2" unique_id=789276776 instance=ExtResource("2_h06od")]
 position = Vector2(17, 24)
@@ -86,7 +87,7 @@ offset_top = 572.0
 offset_right = 365.0
 offset_bottom = 614.0
 theme_override_font_sizes/font_size = 30
-text = "1"
+text = "0"
 
 [node name="Wire" parent="Source5" unique_id=52035041 instance=ExtResource("2_h06od")]
 position = Vector2(17, 24)
@@ -101,7 +102,8 @@ offset_top = 659.0
 offset_right = 363.0
 offset_bottom = 701.0
 theme_override_font_sizes/font_size = 30
-text = "1"
+text = "0
+"
 
 [node name="Wire" parent="Source6" unique_id=2068792356 instance=ExtResource("2_h06od")]
 position = Vector2(17, 24)
@@ -131,7 +133,7 @@ offset_top = 836.0
 offset_right = 367.0
 offset_bottom = 878.0
 theme_override_font_sizes/font_size = 30
-text = "1"
+text = "0"
 
 [node name="Wire" parent="Source8" unique_id=1761570974 instance=ExtResource("2_h06od")]
 position = Vector2(17, 24)
@@ -209,14 +211,14 @@ position = Vector2(52, 1)
 [node name="WireHead" parent="GateSlot7/Wire" unique_id=742569329 instance=ExtResource("3_xby5y")]
 position = Vector2(54, -7)
 
-[node name="Label" type="Label" parent="." unique_id=350529439]
+[node name="Lightbulb" parent="." unique_id=1679660489 instance=ExtResource("5_xby5y")]
+position = Vector2(1107.9999, 487.99997)
+
+[node name="Ziel" type="Label" parent="." unique_id=350529439]
 layout_mode = 0
 offset_left = 1065.0
 offset_top = 476.0
 offset_right = 1105.0
 offset_bottom = 518.0
 theme_override_font_sizes/font_size = 30
-text = "1"
-
-[node name="Lightbulb" parent="." unique_id=1679660489 instance=ExtResource("5_xby5y")]
-position = Vector2(1107.9999, 487.99997)
+text = "0"
