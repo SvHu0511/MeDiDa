@@ -19,4 +19,4 @@ func _on_texture_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Szenen/main/home.tscn")
 
 func on_level1_pressed():
-	get_tree().change_scene_to_file("res://Szenen/main/level1.tscn")
+	get_tree().change_scene_to_file("res://Szenen/main/Level1story.tscn")

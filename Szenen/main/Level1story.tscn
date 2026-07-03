@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://bw1b53cf1vnxg"]
+
+[ext_resource type="Texture2D" uid="uid://b6734ocogujjy" path="res://Assets/Küche.png" id="1_k8m4p"]
+[ext_resource type="Texture2D" uid="uid://b8rqstswqrq6f" path="res://Assets/HaseToaster.png" id="2_cde62"]
+[ext_resource type="Texture2D" uid="uid://cy85qqdm0ecy6" path="res://Assets/Toaster.png" id="3_rotrs"]
+[ext_resource type="Texture2D" uid="uid://b6ylw6j0bhe6o" path="res://Assets/Pfeil.png" id="4_bda46"]
+[ext_resource type="Script" uid="uid://5y4g2tmgx8sy" path="res://Skripte/level1Story.gd" id="5_b0jsn"]
+[ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="6_rotrs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cde62"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rotrs"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bda46"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+corner_detail = 5
+
+[sub_resource type="GDScript" id="GDScript_k8m4p"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+	
+func on_Button_pressed():
+	get_tree().change_scene_to_file(\"res://Szenen/main/level1.tscn\")
+"
+
+[node name="Control" type="Control" unique_id=134124671]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=370413108]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_k8m4p")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=597646164]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_cde62")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1527964155]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 142.0
+offset_right = 842.0
+offset_bottom = 373.0
+texture = ExtResource("3_rotrs")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=390787245]
+layout_mode = 0
+offset_left = 886.0
+offset_top = 179.0
+offset_right = 1378.0
+offset_bottom = 336.0
+theme_override_fonts/font = ExtResource("6_rotrs")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_cde62")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rotrs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bda46")
+text = "Reparieren"
+script = SubResource("GDScript_k8m4p")
+
+[node name="back" type="TextureButton" parent="." unique_id=1874959373]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 106.0
+offset_right = 480.0
+offset_bottom = 405.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("4_bda46")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_b0jsn")
+
+[connection signal="pressed" from="Button" to="Button" method="on_Button_pressed"]
+[connection signal="pressed" from="back" to="back" method="on_back_pressed"]
