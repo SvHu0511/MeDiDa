@@ -287,7 +287,7 @@ scale = Vector2(1.5, 1.5)
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot7/Wire" unique_id=742569329 instance=ExtResource("3_xby5y")]
-position = Vector2(110, 0)
+position = Vector2(104.666664, 0.33333334)
 
 [node name="Target" parent="." unique_id=650517076 instance=ExtResource("7_5ibvj")]
 position = Vector2(1474, 542)
@@ -301,6 +301,7 @@ text = "0"
 
 [node name="GoodJob" type="Label" parent="." unique_id=658036143]
 visible = false
+z_index = 10
 layout_mode = 0
 offset_left = 53.0
 offset_top = 262.0
@@ -313,6 +314,7 @@ LÖSUNG IST RICHTIG!"
 
 [node name="TryAgain" type="Label" parent="." unique_id=456843147]
 visible = false
+z_index = 10
 layout_mode = 0
 offset_left = 26.0
 offset_top = 254.0
