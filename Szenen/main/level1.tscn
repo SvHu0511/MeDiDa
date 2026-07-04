@@ -11,7 +11,8 @@
 [ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="5_b63yh"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="6_2wwrb"]
 [ext_resource type="PackedScene" uid="uid://c5uadl3l2xe4x" path="res://Szenen/board/target.tscn" id="7_5ibvj"]
-[ext_resource type="Texture2D" uid="uid://bph3y2mwnqukp" path="res://icon.svg" id="12_ttrgc"]
+[ext_resource type="Texture2D" uid="uid://ccic2jr15pp4d" path="res://Assets/Haken_grün.webp" id="7_b63yh"]
+[ext_resource type="Texture2D" uid="uid://dvbs0u612kscx" path="res://Assets/lupe.png" id="8_b63yh"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="13_mc2om"]
 
 [node name="Control" type="Control" unique_id=1738690684]
@@ -62,31 +63,23 @@ stretch_mode = 3
 
 [node name="CheckSolutionButton" type="TextureButton" parent="." unique_id=419171720]
 layout_mode = 0
-offset_left = 1733.0
-offset_top = 738.0
-offset_right = 1861.0
-offset_bottom = 866.0
-texture_normal = ExtResource("12_ttrgc")
-
-[node name="Solution" type="Label" parent="CheckSolutionButton" unique_id=175932474]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Check solution"
+offset_left = 1747.0
+offset_top = 743.0
+offset_right = 1853.3123
+offset_bottom = 843.0
+texture_normal = ExtResource("7_b63yh")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="DebugButton" type="TextureButton" parent="." unique_id=1774379165]
 layout_mode = 0
 offset_left = 1733.0
 offset_top = 913.0
-offset_right = 1861.0
-offset_bottom = 1041.0
-texture_normal = ExtResource("12_ttrgc")
-
-[node name="Debug" type="Label" parent="DebugButton" unique_id=1614965054]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Debug"
+offset_right = 1841.0
+offset_bottom = 1021.0
+texture_normal = ExtResource("8_b63yh")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Sources" type="CanvasGroup" parent="." unique_id=407573974]
 position = Vector2(20, 0)
