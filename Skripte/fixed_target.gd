@@ -21,6 +21,8 @@ func _process(delta: float) -> void:
 			solved = true
 		if $InputSlot.input != target:
 			solved = false
+	else:
+		solved = false
 
 
 func check_solution_button():
