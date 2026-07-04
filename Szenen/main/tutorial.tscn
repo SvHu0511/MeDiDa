@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c5v43vcyi4oh3" path="res://Assets/Tutorial7.png" id="8_4hjyh"]
 [ext_resource type="Texture2D" uid="uid://ch2amh6kcc3xy" path="res://Assets/Tutorial8.png" id="9_bsk3x"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="10_tvjhf"]
-[ext_resource type="Script" uid="uid://bmd7k27r4qsox" path="res://tutorial_weiter_button.gd" id="11_vmw6g"]
+[ext_resource type="Script" uid="uid://bmd7k27r4qsox" path="res://Skripte/tutorial_weiter_button.gd" id="11_vmw6g"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hjyh"]
 bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)

@@ -87,21 +87,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=370413108]
+[node name="Background" type="TextureRect" parent="." unique_id=370413108]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_k8m4p")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=597646164]
+[node name="Helfen" type="TextureRect" parent="." unique_id=597646164]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_cde62")
 expand_mode = 1
 
-[node name="TextureRect3" type="TextureRect" parent="." unique_id=1527964155]
+[node name="Toaster" type="TextureRect" parent="." unique_id=1527964155]
 layout_mode = 0
 offset_left = 580.0
 offset_top = 142.0
@@ -110,7 +110,7 @@ offset_bottom = 373.0
 texture = ExtResource("3_rotrs")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="." unique_id=390787245]
+[node name="Reparieren" type="Button" parent="." unique_id=390787245]
 layout_mode = 0
 offset_left = 886.0
 offset_top = 179.0
@@ -124,7 +124,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bda46")
 text = "Reparieren"
 script = SubResource("GDScript_k8m4p")
 
-[node name="back" type="TextureButton" parent="." unique_id=1874959373]
+[node name="Back" type="TextureButton" parent="." unique_id=1874959373]
 layout_mode = 0
 offset_left = 75.0
 offset_top = 106.0
@@ -136,5 +136,5 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("5_b0jsn")
 
-[connection signal="pressed" from="Button" to="Button" method="on_Button_pressed"]
-[connection signal="pressed" from="back" to="Button" method="_on_back_pressed"]
+[connection signal="pressed" from="Reparieren" to="Reparieren" method="on_Button_pressed"]
+[connection signal="pressed" from="Back" to="Reparieren" method="_on_back_pressed"]

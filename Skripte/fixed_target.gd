@@ -1,9 +1,10 @@
 extends Node2D
 @export var target : bool
-@export var solved : bool
+var solved : bool
 @onready var root_node = self.owner
-@export var all_occupied = true
-@export var showing_debug = false
+var all_occupied = true
+var showing_debug = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -30,6 +31,8 @@ func check_solution_button():
 		root_node.get_node("GoodJob").visible = true
 		await get_tree().create_timer(3).timeout
 		root_node.get_node("GoodJob").visible = false
+		get_tree().change_scene_to_file("res://Szenen/main/Level1_thankyou.tscn")
+			
 	else:
 		root_node.get_node("TryAgain").visible = true
 		await get_tree().create_timer(3).timeout

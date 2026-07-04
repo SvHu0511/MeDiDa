@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://8s712l3kknl5"]
+
+[ext_resource type="Texture2D" uid="uid://b6734ocogujjy" path="res://Assets/Küche.png" id="1_8llvx"]
+[ext_resource type="Texture2D" uid="uid://cy85qqdm0ecy6" path="res://Assets/Toaster.png" id="2_d4te2"]
+[ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="4_d4te2"]
+[ext_resource type="Script" uid="uid://cdrrr6yvukbbc" path="res://Skripte/back.gd" id="5_8llvx"]
+[ext_resource type="Texture2D" uid="uid://uuoca7phh0gk" path="res://Assets/haseDanke.png" id="5_51085"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jrph"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8llvx"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4te2"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.85882354, 0.49411765, 0.24313726, 1)
+border_width_left = 40
+border_width_top = 40
+border_width_right = 40
+border_width_bottom = 40
+border_color = Color(0.75686276, 0.40392157, 0.19215687, 1)
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+corner_detail = 5
+
+[node name="Control" type="Control" unique_id=492980005]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=690627363]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_8llvx")
+expand_mode = 1
+
+[node name="Toaster" type="TextureRect" parent="." unique_id=904741796]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 142.0
+offset_right = 842.0
+offset_bottom = 373.0
+texture = ExtResource("2_d4te2")
+expand_mode = 1
+
+[node name="Danke" type="TextureRect" parent="." unique_id=1259012479]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("5_51085")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=1000534832]
+layout_mode = 0
+offset_left = 1225.0
+offset_top = 124.0
+offset_right = 1825.0
+offset_bottom = 294.0
+theme_override_fonts/font = ExtResource("4_d4te2")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_0jrph")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8llvx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d4te2")
+text = "LEVELAUSWAHL"
+script = ExtResource("5_8llvx")
+
+[connection signal="pressed" from="Button" to="Button" method="back"]
