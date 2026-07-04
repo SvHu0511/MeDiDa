@@ -30,9 +30,9 @@ layout_mode = 1
 [node name="ButtonHome" type="TextureButton" parent="." unique_id=1105189169]
 layout_mode = 0
 offset_left = 1712.0
-offset_top = 298.0
+offset_top = 162.00002
 offset_right = 3299.0
-offset_bottom = 2037.9998
+offset_bottom = 1901.9998
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("2_brwyl")
 stretch_mode = 4
@@ -41,9 +41,9 @@ script = ExtResource("3_ttrgc")
 [node name="ButtonCheatsheet" type="TextureButton" parent="." unique_id=2082355409]
 layout_mode = 0
 offset_left = 1735.0
-offset_top = 535.0
+offset_top = 399.0
 offset_right = 2866.0
-offset_bottom = 2135.0
+offset_bottom = 1999.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("4_mc2om")
 stretch_mode = 0
@@ -64,9 +64,9 @@ stretch_mode = 3
 [node name="CheckSolutionButton" type="TextureButton" parent="." unique_id=419171720]
 layout_mode = 0
 offset_left = 1747.0
-offset_top = 743.0
+offset_top = 607.0
 offset_right = 1853.3123
-offset_bottom = 843.0
+offset_bottom = 707.0
 texture_normal = ExtResource("7_b63yh")
 ignore_texture_size = true
 stretch_mode = 0
@@ -74,9 +74,9 @@ stretch_mode = 0
 [node name="DebugButton" type="TextureButton" parent="." unique_id=1774379165]
 layout_mode = 0
 offset_left = 1733.0
-offset_top = 913.0
+offset_top = 777.0
 offset_right = 1841.0
-offset_bottom = 1021.0
+offset_bottom = 885.0
 texture_normal = ExtResource("8_b63yh")
 ignore_texture_size = true
 stretch_mode = 0
