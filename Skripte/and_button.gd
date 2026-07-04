@@ -7,8 +7,6 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func on_pressed():
-	print("pressed AND")
 	var instance = and_gate_scene.instantiate()
-	instance.position = Vector2(1500, 100)
+	instance.position = Vector2(865, 900)
 	get_tree().current_scene.add_child(instance)
-	print("done creating")

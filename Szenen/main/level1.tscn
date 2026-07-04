@@ -89,12 +89,13 @@ offset_bottom = 23.0
 text = "Debug"
 
 [node name="Sources" type="CanvasGroup" parent="." unique_id=407573974]
+position = Vector2(20, 0)
 
 [node name="Source1" type="Label" parent="Sources" unique_id=1063398982]
 offset_left = 325.0
-offset_top = 199.0
+offset_top = 216.0
 offset_right = 365.0
-offset_bottom = 241.0
+offset_bottom = 258.0
 theme_override_font_sizes/font_size = 30
 text = "1"
 script = ExtResource("2_xcc4v")
@@ -104,13 +105,13 @@ input = true
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source1/Wire" unique_id=1228259660 instance=ExtResource("3_xby5y")]
-position = Vector2(68, 11)
+position = Vector2(82, 15)
 
 [node name="Source2" type="Label" parent="Sources" unique_id=669747157]
-offset_left = 328.0
-offset_top = 294.0
-offset_right = 368.0
-offset_bottom = 336.0
+offset_left = 325.0
+offset_top = 301.0
+offset_right = 365.0
+offset_bottom = 343.0
 theme_override_font_sizes/font_size = 30
 text = "0"
 script = ExtResource("2_xcc4v")
@@ -119,12 +120,12 @@ script = ExtResource("2_xcc4v")
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source2/Wire" unique_id=1119986584 instance=ExtResource("3_xby5y")]
-position = Vector2(64, -36)
+position = Vector2(82, -22)
 
 [node name="Source3" type="Label" parent="Sources" unique_id=697023731]
-offset_left = 323.0
+offset_left = 325.0
 offset_top = 386.0
-offset_right = 363.0
+offset_right = 365.0
 offset_bottom = 428.0
 theme_override_font_sizes/font_size = 30
 text = "1"
@@ -135,13 +136,13 @@ input = true
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source3/Wire" unique_id=907181236 instance=ExtResource("3_xby5y")]
-position = Vector2(73, 25)
+position = Vector2(82, 17)
 
 [node name="Source4" type="Label" parent="Sources" unique_id=1959680708]
-offset_left = 328.0
-offset_top = 496.0
-offset_right = 368.0
-offset_bottom = 538.0
+offset_left = 325.0
+offset_top = 471.0
+offset_right = 365.0
+offset_bottom = 513.0
 theme_override_font_sizes/font_size = 30
 text = "1"
 script = ExtResource("2_xcc4v")
@@ -151,13 +152,13 @@ input = true
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source4/Wire" unique_id=1425353280 instance=ExtResource("3_xby5y")]
-position = Vector2(70, -40)
+position = Vector2(82, -23)
 
 [node name="Source5" type="Label" parent="Sources" unique_id=1631218865]
 offset_left = 325.0
-offset_top = 572.0
+offset_top = 556.0
 offset_right = 365.0
-offset_bottom = 614.0
+offset_bottom = 598.0
 theme_override_font_sizes/font_size = 30
 text = "0"
 script = ExtResource("2_xcc4v")
@@ -166,13 +167,13 @@ script = ExtResource("2_xcc4v")
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source5/Wire" unique_id=742788028 instance=ExtResource("3_xby5y")]
-position = Vector2(61, 11)
+position = Vector2(82, 22)
 
 [node name="Source6" type="Label" parent="Sources" unique_id=1522565154]
-offset_left = 323.0
-offset_top = 659.0
-offset_right = 363.0
-offset_bottom = 746.0
+offset_left = 325.0
+offset_top = 641.0
+offset_right = 365.0
+offset_bottom = 728.0
 theme_override_font_sizes/font_size = 30
 text = "0
 "
@@ -182,13 +183,13 @@ script = ExtResource("2_xcc4v")
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source6/Wire" unique_id=1293994697 instance=ExtResource("3_xby5y")]
-position = Vector2(64, -29)
+position = Vector2(82, -15)
 
 [node name="Source7" type="Label" parent="Sources" unique_id=632752092]
-offset_left = 319.0
-offset_top = 756.0
-offset_right = 359.0
-offset_bottom = 798.0
+offset_left = 325.0
+offset_top = 726.0
+offset_right = 365.0
+offset_bottom = 768.0
 theme_override_font_sizes/font_size = 30
 text = "1"
 script = ExtResource("2_xcc4v")
@@ -198,13 +199,13 @@ input = true
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source7/Wire" unique_id=254108532 instance=ExtResource("3_xby5y")]
-position = Vector2(69, 13)
+position = Vector2(82, 19)
 
 [node name="Source8" type="Label" parent="Sources" unique_id=909677246]
-offset_left = 327.0
-offset_top = 836.0
-offset_right = 367.0
-offset_bottom = 878.0
+offset_left = 325.0
+offset_top = 811.0
+offset_right = 365.0
+offset_bottom = 853.0
 theme_override_font_sizes/font_size = 30
 text = "0"
 script = ExtResource("2_xcc4v")
@@ -213,82 +214,83 @@ script = ExtResource("2_xcc4v")
 position = Vector2(17, 24)
 
 [node name="WireHead" parent="Sources/Source8/Wire" unique_id=1094214594 instance=ExtResource("3_xby5y")]
-position = Vector2(63, -22)
+position = Vector2(82, -20)
 
 [node name="GateSlots" type="CanvasGroup" parent="." unique_id=328338755]
+position = Vector2(20, 0)
 
 [node name="GateSlot" parent="GateSlots" unique_id=1456416178 instance=ExtResource("4_h06od")]
-position = Vector2(483, 259)
+position = Vector2(500, 280)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot" unique_id=912043073 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot/Wire" unique_id=1578005347 instance=ExtResource("3_xby5y")]
-position = Vector2(32, 31.666666)
+position = Vector2(150, 36.33333)
 
 [node name="GateSlot2" parent="GateSlots" unique_id=18825157 instance=ExtResource("4_h06od")]
-position = Vector2(490, 458)
+position = Vector2(500, 452)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot2" unique_id=616291101 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot2/Wire" unique_id=425331738 instance=ExtResource("3_xby5y")]
-position = Vector2(29.333332, -68.33333)
+position = Vector2(150, -46.333324)
 
 [node name="GateSlot3" parent="GateSlots" unique_id=1186014122 instance=ExtResource("4_h06od")]
-position = Vector2(478, 630)
+position = Vector2(500, 628)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot3" unique_id=2069048721 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot3/Wire" unique_id=643024370 instance=ExtResource("3_xby5y")]
-position = Vector2(32, 27.666666)
+position = Vector2(150, 43.000008)
 
 [node name="GateSlot4" parent="GateSlots" unique_id=1592017702 instance=ExtResource("4_h06od")]
-position = Vector2(481, 816)
+position = Vector2(500, 793)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot4" unique_id=1923880694 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot4/Wire" unique_id=779682962 instance=ExtResource("3_xby5y")]
-position = Vector2(32.666664, -64.33333)
+position = Vector2(150, -35.666656)
 
 [node name="GateSlot5" parent="GateSlots" unique_id=180735336 instance=ExtResource("4_h06od")]
-position = Vector2(684, 333)
+position = Vector2(875.00006, 361)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot5" unique_id=1798098131 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot5/Wire" unique_id=934497197 instance=ExtResource("3_xby5y")]
-position = Vector2(40.666664, 92.33333)
+position = Vector2(115, 102.333)
 
 [node name="GateSlot6" parent="GateSlots" unique_id=1438765195 instance=ExtResource("4_h06od")]
-position = Vector2(678, 699)
+position = Vector2(875, 718)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot6" unique_id=149904740 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot6/Wire" unique_id=450639658 instance=ExtResource("3_xby5y")]
-position = Vector2(46, -121.666664)
+position = Vector2(115, -104.333)
 
 [node name="GateSlot7" parent="GateSlots" unique_id=1237962022 instance=ExtResource("4_h06od")]
-position = Vector2(896, 498)
+position = Vector2(1200, 541)
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="GateSlots/GateSlot7" unique_id=1120701361 instance=ExtResource("2_h06od")]
 position = Vector2(52, 1)
 
 [node name="WireHead" parent="GateSlots/GateSlot7/Wire" unique_id=742569329 instance=ExtResource("3_xby5y")]
-position = Vector2(54, -7)
+position = Vector2(110, 0)
 
 [node name="Target" parent="." unique_id=650517076 instance=ExtResource("7_5ibvj")]
-position = Vector2(1077, 488)
+position = Vector2(1474, 542)
 
 [node name="Label" type="Label" parent="Target" unique_id=698637231]
 offset_top = -17.0
