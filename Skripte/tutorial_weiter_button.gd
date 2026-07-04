@@ -21,7 +21,7 @@ func _on_pressed_weiter():
 	slide += 1;
 	
 	if slide == 9:
-		get_tree().change_scene_to_file("res://Szenen/main/main.tscn");
+		get_tree().change_scene_to_file("res://Szenen/main/playground.tscn");
 	else:
 		picture = find(slide);
 		get_node(picture).visible = !get_node(picture).visible
