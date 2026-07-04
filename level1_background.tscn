@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bdxsotsu2x6ig"]
+
+[ext_resource type="Texture2D" uid="uid://b6734ocogujjy" path="res://Assets/Küche.png" id="1_nft04"]
+[ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_kk2ta"]
+[ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="3_cjk1n"]
+[ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Skripte/or_button.gd" id="4_8q3pj"]
+
+[node name="Control" type="Control" unique_id=943878663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1006261803]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_nft04")
+expand_mode = 1
+
+[node name="PuzzleField" type="TextureRect" parent="." unique_id=1979235189]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_kk2ta")
+
+[node name="Toolbox" type="Panel" parent="." unique_id=1141540530]
+layout_mode = 0
+offset_top = 952.0
+offset_right = 1920.0
+offset_bottom = 1032.0
+
+[node name="Buttons" type="HBoxContainer" parent="Toolbox" unique_id=387365577]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 80.0
+alignment = 1
+
+[node name="AndButton" type="Button" parent="Toolbox/Buttons" unique_id=225334208]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "AND"
+script = ExtResource("3_cjk1n")
+
+[node name="OrButton" type="Button" parent="Toolbox/Buttons" unique_id=832857678]
+clip_contents = true
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "OR
+"
+script = ExtResource("4_8q3pj")
+
+[connection signal="pressed" from="Toolbox/Buttons/AndButton" to="Toolbox/Buttons/AndButton" method="on_pressed"]
+[connection signal="pressed" from="Toolbox/Buttons/OrButton" to="Toolbox/Buttons/OrButton" method="on_pressed"]

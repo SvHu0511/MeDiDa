@@ -73,6 +73,10 @@ func _process(delta: float) -> void:
 	
 func on_Button_pressed():
 	get_tree().change_scene_to_file(\"res://Szenen/main/level1.tscn\")
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Szenen/main/level.tscn\")
 "
 
 [node name="Control" type="Control" unique_id=134124671]
@@ -133,4 +137,4 @@ stretch_mode = 0
 script = ExtResource("5_b0jsn")
 
 [connection signal="pressed" from="Button" to="Button" method="on_Button_pressed"]
-[connection signal="pressed" from="back" to="back" method="on_back_pressed"]
+[connection signal="pressed" from="back" to="Button" method="_on_back_pressed"]
