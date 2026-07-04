@@ -319,17 +319,12 @@ text = "NOCH NICHT GANZ.
 PROBIERE ES NOCHMAL"
 
 [node name="FillAll" type="Label" parent="." unique_id=1164302013]
-visible = false
-z_index = 10
 layout_mode = 0
-offset_left = 193.0
-offset_top = 344.0
-offset_right = 1636.0
-offset_bottom = 685.0
+offset_right = 40.0
+offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("13_mc2om")
-theme_override_font_sizes/font_size = 150
-text = "DU MUSST ERSTMAL ALLE
- PLÄTZE BELEGEN"
+theme_override_font_sizes/font_size = 200
+text = "DU MUSST ERSTMAL ALLE PLÄTZE BELEGEN"
 
 [connection signal="pressed" from="ButtonHome" to="ButtonHome" method="_on_pressed"]
 [connection signal="pressed" from="ButtonCheatsheet" to="ButtonCheatsheet" method="_on_pressed"]
