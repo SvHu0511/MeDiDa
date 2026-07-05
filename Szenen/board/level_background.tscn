@@ -4,6 +4,10 @@
 [ext_resource type="Script" uid="uid://b5p3pbtruwndb" path="res://Skripte/and_button.gd" id="2_iscm3"]
 [ext_resource type="Texture2D" uid="uid://m0cso77j7uog" path="res://Assets/Puzzlebackground.png" id="2_u5t7x"]
 [ext_resource type="Script" uid="uid://d2pmew2ik2r3y" path="res://Skripte/or_button.gd" id="4_u5t7x"]
+[ext_resource type="Texture2D" uid="uid://ceykifi4mquea" path="res://Assets/trashcan.png" id="5_2bcr2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2bcr2"]
+size = Vector2(90, 101)
 
 [node name="Level Background" type="Control" unique_id=559517426]
 layout_mode = 3
@@ -55,6 +59,18 @@ layout_mode = 2
 text = "OR
 "
 script = ExtResource("4_u5t7x")
+
+[node name="Trashcan" type="Area2D" parent="Toolbox" unique_id=2077609545 groups=["trashcan"]]
+position = Vector2(1479, 37)
+
+[node name="Sprite2D" type="Sprite2D" parent="Toolbox/Trashcan" unique_id=10795772]
+position = Vector2(0, 2.2888184e-05)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("5_2bcr2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Toolbox/Trashcan" unique_id=553557387]
+position = Vector2(-3, 3.5)
+shape = SubResource("RectangleShape2D_2bcr2")
 
 [connection signal="pressed" from="Toolbox/Buttons/AndButton" to="Toolbox/Buttons/AndButton" method="on_pressed"]
 [connection signal="pressed" from="Toolbox/Buttons/OrButton" to="Toolbox/Buttons/OrButton" method="on_pressed"]

@@ -1,6 +1,5 @@
 extends Node
 var dragging = false #prevents drag-n-drop from grabbing multiple gates at the same time
-var freeplay_mode = false #unused
 
 
 const and_logic = {
@@ -24,7 +23,3 @@ func handle_logic(inputs: Array, gate_type: String) -> bool:
 			return and_logic.get(Vector2(inputs[0], inputs[1]))
 		_:
 			return false
-
-#TODO
-func check_solution():
-	pass

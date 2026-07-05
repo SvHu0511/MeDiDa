@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://08btemwbik6" path="res://Assets/Haus.png" id="3_xdtia"]
 [ext_resource type="Texture2D" uid="uid://31qp07l7ybj7" path="res://Assets/medida-cheetsheet.png" id="4_1b6ah"]
 [ext_resource type="PackedScene" uid="uid://i473uchygket" path="res://Szenen/board/wire_head.tscn" id="4_ifj4h"]
-[ext_resource type="Script" uid="uid://ybqn5ir3wscm" path="res://Skripte/button_home.gd" id="4_xdj3n"]
+[ext_resource type="Script" path="res://Skripte/button_home.gd" id="4_xdj3n"]
 [ext_resource type="Texture2D" uid="uid://7vaatxjsguqr" path="res://Assets/Klemmbrett.png" id="5_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://b2pvudbkf5qhe" path="res://Szenen/board/energy_source.tscn" id="7_jybfl"]
-[ext_resource type="Script" uid="uid://dstr8q3hhsfk6" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
+[ext_resource type="Script" path="res://Skripte/button_cheatsheet.gd" id="8_ifj4h"]
 [ext_resource type="PackedScene" uid="uid://bem838awj8sty" path="res://Szenen/board/lightbulb.tscn" id="10_lcnn6"]
 
 [node name="Main" type="Control" unique_id=1387783340]
@@ -60,57 +60,57 @@ stretch_mode = 3
 
 [node name="Board" type="Node2D" parent="." unique_id=1296858111]
 
-[node name="EnergySource" parent="Board" unique_id=1477292166 instance=ExtResource("7_jybfl")]
-offset_left = 343.00006
-offset_top = 395.0
-offset_right = 359.00006
-offset_bottom = 411.0
+[node name="EnergySource5" parent="Board" unique_id=1477292166 instance=ExtResource("7_jybfl")]
+offset_left = 335.0
+offset_top = 280.0
+offset_right = 355.0
+offset_bottom = 300.0
+scale = Vector2(1.5, 1.5)
+
+[node name="Wire" parent="Board/EnergySource5" unique_id=1730851778 instance=ExtResource("3_xdj3n")]
+position = Vector2(19.333344, 10)
+
+[node name="WireHead" parent="Board/EnergySource5/Wire" unique_id=379162228 instance=ExtResource("4_ifj4h")]
+position = Vector2(123.3333, 13.466667)
+
+[node name="EnergySource" parent="Board" unique_id=845519015 instance=ExtResource("7_jybfl")]
+offset_left = 335.0
+offset_top = 390.0
+offset_right = 355.0
+offset_bottom = 410.0
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="Board/EnergySource" unique_id=1956494375 instance=ExtResource("3_xdj3n")]
-position = Vector2(16.000025, 7.1999755)
+position = Vector2(19.333296, 10.666664)
 
 [node name="WireHead" parent="Board/EnergySource/Wire" unique_id=1228259660 instance=ExtResource("4_ifj4h")]
-position = Vector2(121.3333, -29.19998)
-
-[node name="EnergySource2" parent="Board" unique_id=2099856908 instance=ExtResource("7_jybfl")]
-offset_left = 339.00006
-offset_top = 282.00003
-offset_right = 355.00006
-offset_bottom = 298.00003
-scale = Vector2(1.5, 1.5)
-
-[node name="Wire" parent="Board/EnergySource2" unique_id=1730851778 instance=ExtResource("3_xdj3n")]
-position = Vector2(16.000025, 7.1999755)
-
-[node name="WireHead" parent="Board/EnergySource2/Wire" unique_id=379162228 instance=ExtResource("4_ifj4h")]
-position = Vector2(121.3333, 13.466668)
+position = Vector2(123.3333, -29.199982)
 
 [node name="EnergySource3" parent="Board" unique_id=1043002292 instance=ExtResource("7_jybfl")]
-offset_left = 351.00006
-offset_top = 597.0
-offset_right = 367.00006
+offset_left = 335.0
+offset_top = 593.0
+offset_right = 355.0
 offset_bottom = 613.0
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="Board/EnergySource3" unique_id=175211549 instance=ExtResource("3_xdj3n")]
-position = Vector2(16.000025, 7.1999755)
+position = Vector2(19.333298, 10.666672)
 
 [node name="WireHead" parent="Board/EnergySource3/Wire" unique_id=245440901 instance=ExtResource("4_ifj4h")]
-position = Vector2(121.3333, 22.800001)
+position = Vector2(127.3333, 22.800003)
 
 [node name="EnergySource4" parent="Board" unique_id=108424590 instance=ExtResource("7_jybfl")]
-offset_left = 356.00006
-offset_top = 726.0
-offset_right = 372.00006
+offset_left = 335.0
+offset_top = 722.0
+offset_right = 355.0
 offset_bottom = 742.0
 scale = Vector2(1.5, 1.5)
 
 [node name="Wire" parent="Board/EnergySource4" unique_id=898423465 instance=ExtResource("3_xdj3n")]
-position = Vector2(16.000025, 7.1999755)
+position = Vector2(19.333366, 10.533295)
 
 [node name="WireHead" parent="Board/EnergySource4/Wire" unique_id=1336030679 instance=ExtResource("4_ifj4h")]
-position = Vector2(118.66663, -29.199999)
+position = Vector2(127.33334, -31.200027)
 
 [node name="GateSlots" type="CanvasGroup" parent="Board" unique_id=682563198]
 
@@ -144,7 +144,7 @@ scale = Vector2(1.5, 1.5)
 scale = Vector2(1.5, 1.5)
 
 [node name="WireHead" parent="Board/GateSlots/GateSlot3/Wire" unique_id=61474050 instance=ExtResource("4_ifj4h")]
-position = Vector2(111.55556, -0.88890076)
+position = Vector2(114.222305, 0)
 scale = Vector2(0.75, 0.75)
 
 [node name="Lightbulb" parent="Board" unique_id=1679660489 instance=ExtResource("10_lcnn6")]

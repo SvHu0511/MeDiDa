@@ -3,32 +3,28 @@ extends Area2D
 #connect a node to the "dropped" signal for logic when node is dropped
 
 var dragging: bool
-var draggable: bool
 var drag_offset: Vector2
 var stop_drag = false
 
 signal dropped
 
+#handles object movement (not in _on_input_event() to prevent movement cutting off if dragging too fast)
 func _input(event: InputEvent) -> void:
+	if (event is InputEventScreenDrag or event is InputEventMouseMotion) and dragging:
+		get_parent().global_position = get_global_mouse_position() + drag_offset
+
+#handles picking up/dropping an object when its collision is clicked/tapped
+func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
 	if stop_drag:
 		return
 	
-	if event is InputEventScreenTouch:
-		if not Global.dragging and draggable and event.pressed:
+	if event is InputEventScreenTouch or (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT):
+		if not Global.dragging and event.pressed:
 			Global.dragging = true
 			dragging = true
 			drag_offset = get_parent().global_position - get_global_mouse_position()
-		elif dragging and not event.pressed:
+		elif dragging and event.is_released():
 			Global.dragging = false
 			dragging = false
 			dropped.emit()
 	
-	if event is InputEventScreenDrag and dragging:
-		get_parent().global_position = get_global_mouse_position() + drag_offset
-
-
-func _on_mouse_entered() -> void:
-	draggable = true
-
-func _on_mouse_exited() -> void:
-	draggable = false

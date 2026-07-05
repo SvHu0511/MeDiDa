@@ -5,8 +5,6 @@ var input_slot_ref: Area2D
 var input: bool
 var prev_input: bool
 
-signal  connected(input, input_slot_ref)
-
 # If WireHead spawns on an input slot, apply logic and remove drag-n-drop (fixed wires)
 func _ready() -> void:
 	await get_tree().process_frame

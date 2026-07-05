@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dbjke3pvgkmw6" path="res://Assets/HintergrundKatze.png" id="1_xol5m"]
 [ext_resource type="FontFile" uid="uid://w2oij1uigumq" path="res://Assets/Watermelon Sugar.ttf" id="2_g4m28"]
-[ext_resource type="Script" uid="uid://b3xebu26qmg3r" path="res://Skripte/button_levelauswahl.gd" id="2_j8et0"]
+[ext_resource type="Script" path="res://Skripte/button_levelauswahl.gd" id="2_j8et0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlq2e"]
 content_margin_left = 4.0
