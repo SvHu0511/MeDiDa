@@ -1,6 +1,6 @@
 extends Button
 
-var or_gate_scene = preload("res://Szenen/gates/Or_gate.tscn")
+var or_gate_scene = preload("res://Szenen/gates/or_gate.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

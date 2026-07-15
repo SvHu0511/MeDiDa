@@ -31,7 +31,7 @@ func check_solution_button():
 		root_node.get_node("GoodJob").visible = true
 		await get_tree().create_timer(3).timeout
 		root_node.get_node("GoodJob").visible = false
-		get_tree().change_scene_to_file("res://Szenen/main/Level1_thankyou.tscn")
+		get_tree().change_scene_to_file("res://Szenen/main/level1_thankyou.tscn")
 			
 	else:
 		root_node.get_node("TryAgain").visible = true
